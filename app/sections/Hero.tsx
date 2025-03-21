@@ -63,11 +63,11 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
-                  <span>$35K Total Budget</span>
+                  <span>8 Unique Classes</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                  <span>785% ROI in 90 Days</span>
+                  <span>Daily Tournaments</span>
                 </div>
               </div>
             </motion.div>
@@ -82,28 +82,28 @@ const Hero: React.FC = () => {
             >
               {/* Highlight box for key statistics */}
               <div className="w-full bg-[#1a1025] border-4 border-purple-700 flex flex-col items-center justify-center relative overflow-hidden p-8">
-                <h3 className="font-['Press_Start_2P'] text-cyan-400 text-xl mb-6">Revenue Projection</h3>
+                <h3 className="font-['Press_Start_2P'] text-cyan-400 text-xl mb-6">Game Features</h3>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mb-6">
                   <div className="bg-[#0a0a0a] p-4 border-b-2 border-purple-700">
-                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">90d</div>
-                    <div className="text-center font-['VT323'] text-2xl text-gray-300">$310,000</div>
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">8,192</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">Unique NFTs</div>
                   </div>
                   
                   <div className="bg-[#0a0a0a] p-4 border-b-2 border-cyan-500">
-                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">1yr</div>
-                    <div className="text-center font-['VT323'] text-2xl text-gray-300">$590,000</div>
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">8</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">Warrior Classes</div>
                   </div>
                   
                   <div className="bg-[#0a0a0a] p-4 border-b-2 border-green-500">
-                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">ROI</div>
-                    <div className="text-center font-['VT323'] text-2xl text-gray-300">785%</div>
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">5,000</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">SOL Prize</div>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-center">
                   <FaRocket className="text-purple-500 mr-2" size={18} />
-                  <span className="font-['VT323'] text-xl text-gray-300">Elite team, accelerated timeline</span>
+                  <span className="font-['VT323'] text-xl text-gray-300">Strategic battles with Rock/Paper/Scissors mechanics</span>
                 </div>
               </div>
 

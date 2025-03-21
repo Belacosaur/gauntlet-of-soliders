@@ -152,9 +152,9 @@ const WhitepaperPage = () => {
                       <ul className="space-y-2 list-disc pl-5 font-['VT323'] text-lg">
                         <li>Development Timeline: <span className="text-purple-400 font-bold">30-60 days</span></li>
                         <li>Development Budget: <span className="text-amber-400 font-bold">$20,000</span></li>
-                        <li>Revenue Potential: <span className="text-green-400 font-bold">$400K-$800K</span> in first year</li>
+                        <li>Player Engagement: <span className="text-green-400 font-bold">Daily tournaments & battles</span></li>
                         <li>NFT Collection: <span className="text-cyan-400 font-bold">8,192 unique warriors</span> across 8 classes</li>
-                        <li>ROI Potential: <span className="text-green-400 font-bold">20-40x</span> on initial investment</li>
+                        <li>Battle System: <span className="text-green-400 font-bold">Strategic Rock/Paper/Scissors</span> with positioning</li>
                       </ul>
                     </div>
 

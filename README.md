@@ -22,11 +22,11 @@
 - **Target Audience**: Crypto enthusiasts, casual gamers, collectors
 - **Revenue Model**: NFT sales, tournament fees, marketplace royalties
 
-## Investment Highlights
+## Game Highlights
 
 - **Fast Development**: Elite team delivering a complete product in just 30-60 days
 - **Low Initial Investment**: Efficient development approach with $35K total budget
-- **High ROI Potential**: Estimated 5-10x return within first 90 days after launch
+- **Engaging Gameplay**: Strategic battle system with depth and replayability
 - **Scalable Model**: Foundation for seasons, expansions, and ecosystem growth
 
 ## Cost Breakdown
@@ -37,16 +37,6 @@
 | Art & Assets | $5,000-$10,000 | 50 days |
 | Marketing | $10,000 | Ongoing |
 | **Total Investment** | **$35,000** | |
-
-## Revenue Projections
-
-| Revenue Source | 90-Day Projection | 1-Year Projection |
-|----------------|-------------------|-------------------|
-| NFT Mint Sales | $240,000 | $240,000 |
-| Secondary Market Royalties | $50,000 | $200,000 |
-| Tournament Fees | $20,000 | $150,000 |
-| **Total Revenue** | **$310,000** | **$590,000** |
-| **Projected Profit** | **$275,000** | **$555,000** |
 
 ## Key Features
 
@@ -83,7 +73,7 @@
 
 ## Why Gauntlet of SOLiders?
 
-Gauntlet of SOLiders combines the strategic depth of competitive games with the collecting appeal of NFTs in a fast, accessible format. Our focused development approach delivers exceptional quality on an accelerated timeline, maximizing your ROI while minimizing risk.
+Gauntlet of SOLiders combines the strategic depth of competitive games with the collecting appeal of NFTs in a fast, accessible format. Our focused development approach delivers exceptional quality on an accelerated timeline.
 
 By leveraging our experienced team and efficient production methods, we're able to create a complete game experience at a fraction of the typical cost and time, resulting in a product that's positioned for rapid market success.
 
