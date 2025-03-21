@@ -2,124 +2,100 @@
 
 <div align="center">
   <img src="public/images/gauntlet-logo.png" alt="Gauntlet of SOLiders Logo" width="200"/>
-  <h3>A strategic medieval NFT duel game on the Solana blockchain</h3>
-  <p>Where skill, strategy, and ownership converge</p>
+  <h3>Medieval Fantasy NFT Battle Game</h3>
 </div>
 
-## Overview
+## Game Overview
 
-Gauntlet of SOLiders is a competitive medieval fantasy game built on Solana where players command warrior NFTs in strategic duels, compete in tournaments, and earn rewards through skill-based gameplay. The game features a unique Rock/Paper/Scissors combat system with enhanced depth through positioning and special abilities.
+**Gauntlet of SOLiders** is an exciting medieval fantasy battle game where players collect unique warrior NFTs and compete in strategic duels on the Solana blockchain. Our game features:
 
-This repository contains both the marketing website for the Gauntlet of SOLiders project as well as comprehensive project documentation including architecture, requirements, timeline, costs, and marketing strategy.
+- **Accessible Gameplay**: Easy to learn, hard to master Rock/Paper/Scissors mechanics with a strategic twist
+- **Collectible Warriors**: 8,192 uniquely generated warrior NFTs across 8 distinct character classes
+- **Competitive Tournaments**: Regular competitions with prize pools for skilled players
+- **Play-to-Earn**: Win rewards and grow your collection through gameplay
 
-## Website
+## Quick Facts
 
-The project website showcases the Gauntlet of SOLiders game concept and provides information about:
+- **Development Timeline**: 30-60 days (accelerated schedule)
+- **Total Budget**: $35,000 (all-inclusive)
+- **NFT Collection Size**: 8,192 unique warriors
+- **Target Audience**: Crypto enthusiasts, casual gamers, collectors
+- **Revenue Model**: NFT sales, tournament fees, marketplace royalties
 
-- Core gameplay mechanics
-- NFT collection details
-- Tournament structure
-- Prize pool system
-- Art style and visuals
-- Smart contract functionality
-- Team and roadmap
+## Investment Highlights
 
-## Documentation
+- **Fast Development**: Elite team delivering a complete product in just 30-60 days
+- **Low Initial Investment**: Efficient development approach with $35K total budget
+- **High ROI Potential**: Estimated 5-10x return within first 90 days after launch
+- **Scalable Model**: Foundation for seasons, expansions, and ecosystem growth
 
-This repository includes detailed documentation for the Gauntlet of SOLiders project:
+## Cost Breakdown
 
-- [Architecture Document](ARCHITECTURE.md) - Comprehensive technical architecture
-- [Requirements Document](REQUIREMENTS.md) - Detailed technical requirements
-- [Cost Estimation](COST_ESTIMATION.md) - Development and operational costs ($20,000)
-- [Project Timeline](PROJECT_TIMELINE.md) - Accelerated 30-60 day development schedule
-- [Marketing Plan](MARKETING_PLAN.md) - Rapid community building and launch strategy
-- [Technical FAQ](TECHNICAL_FAQ.md) - Common technical questions and answers
-- [Pitch Deck](PITCH_DECK.md) - Presentation for investors and partners
+| Category | Budget | Timeline |
+|----------|--------|----------|
+| Game Development | $20,000 | 30-60 days |
+| Art & Assets | $5,000-$10,000 | 50 days |
+| Marketing | $10,000 | Ongoing |
+| **Total Investment** | **$35,000** | |
 
-## Game Features
+## Revenue Projections
 
-- **Strategic Battles**: Deploy warriors on a 3x3 grid with enhanced Rock/Paper/Scissors mechanics
-- **NFT Ownership**: 8,192 unique warrior NFTs across 8 distinct classes
-- **Tournaments**: Competitive tournament structure with substantial prize pools
-- **Token Economy**: $EXP token earned through staking and battles for progression
-- **Pixel Art**: Distinctive medieval fantasy pixel art aesthetic
-- **Solana Blockchain**: Fast, low-fee transactions for seamless gameplay
+| Revenue Source | 90-Day Projection | 1-Year Projection |
+|----------------|-------------------|-------------------|
+| NFT Mint Sales | $240,000 | $240,000 |
+| Secondary Market Royalties | $50,000 | $200,000 |
+| Tournament Fees | $20,000 | $150,000 |
+| **Total Revenue** | **$310,000** | **$590,000** |
+| **Projected Profit** | **$275,000** | **$555,000** |
 
-## Technologies Used
+## Key Features
 
-### Website
+### Gameplay
+- Strategic 3x3 grid battlefield
+- Enhanced Rock/Paper/Scissors combat system
+- Class-based abilities and special moves
+- Tournament ladder system with rankings
 
-- **Next.js**: React framework for frontend
-- **TypeScript**: Type-safe JavaScript
-- **Tailwind CSS**: Utility-first CSS framework
-- **Framer Motion**: Animation library
-- **React Icons**: Icon library
+### NFT Collection
+- 8 warrior classes with unique abilities
+- Procedurally generated with distinct traits
+- Utility-focused NFTs that affect gameplay
+- Seasonal releases for long-term engagement
 
-### Game (Planned)
+### Smart Contracts
+- Secure and efficient Solana-based design
+- Transparent and fair battle mechanics
+- Built-in anti-cheat protection
+- Seamless wallet integration
 
-- **Solana Blockchain**: Base layer for transactions and ownership
-- **Metaplex**: NFT standard implementation
-- **Anchor Framework**: Smart contract development
-- **Rust**: Smart contract programming language
-- **React/TypeScript**: Game client frontend
-- **WebGL/PixiJS**: Game rendering
-- **Node.js**: Backend services
+### Artwork
+- Distinctive pixel art style
+- 8 base character classes with variations
+- 5 unique battle environments
+- Compelling promotional materials
 
-## Getting Started
+## Production Timeline
 
-### Prerequisites
+1. **Days 1-10**: Project setup, design finalization, and technical foundation
+2. **Days 11-40**: Core development of game mechanics, smart contracts, and base assets
+3. **Days 41-55**: Testing, refinement, and marketing campaign launch
+4. **Days 56-60**: Final polish and official launch
 
-- Node.js (v16+)
-- npm or yarn
+## Why Gauntlet of SOLiders?
 
-### Installation
+Gauntlet of SOLiders combines the strategic depth of competitive games with the collecting appeal of NFTs in a fast, accessible format. Our focused development approach delivers exceptional quality on an accelerated timeline, maximizing your ROI while minimizing risk.
 
-1. Clone the repository
-```bash
-git clone https://github.com/Belacosaur/gauntlet-of-soliders.git
-cd gauntlet-of-soliders
-```
+By leveraging our experienced team and efficient production methods, we're able to create a complete game experience at a fraction of the typical cost and time, resulting in a product that's positioned for rapid market success.
 
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
+## Next Steps
 
-3. Run the development server
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Project Status
-
-The Gauntlet of SOLiders project is currently in rapid development. Our elite team of developers is working on a compressed 30-60 day timeline to deliver the complete game experience. The website serves as an information hub and pitch platform during this accelerated development phase.
-
-## Accelerated Roadmap
-
-- **Days 1-10**: Project setup, design finalization, and technical architecture
-- **Days 11-40**: Core development of smart contracts, frontend, and backend services
-- **Days 41-55**: Testing, refinement, and pre-launch activities
-- **Days 56-60**: Launch preparation and NFT mint
-
-## Contact
-
-- Website: [gauntletofsoliders.io](https://gauntletofsoliders.io)
-- Twitter: [@GauntletSOL](https://twitter.com/GauntletSOL)
-- Discord: [discord.gg/gauntletofsoliders](https://discord.gg/gauntletofsoliders)
-- Email: team@gauntletofsoliders.io
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Review the detailed documents in this repository
+2. Schedule a demo with our team
+3. Finalize investment and kick off production
+4. Prepare for launch in 60 days
 
 ---
 
-<div align="center">
-  <p>© 2023 Gauntlet of SOLiders. All rights reserved.</p>
-</div>
+**Contact:** team@gauntletofsoliders.io
+
+*For detailed technical information, please refer to the documentation files in this repository.*
