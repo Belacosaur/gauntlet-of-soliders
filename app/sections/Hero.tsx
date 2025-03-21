@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '../components/Button';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaCalendar, FaRocket } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
   return (
@@ -33,39 +33,41 @@ const Hero: React.FC = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-300 font-['VT323'] mb-8">
-                A medieval NFT duel game on Solana with a "last warrior standing" premise.
-                8,192 NFTs enter, 1 survives with a 5,000 SOL grand prize.
+                A strategic medieval NFT battle game on Solana with exceptional ROI potential. 
+                <span className="text-purple-400 font-bold"> From concept to launch in just 30-60 days.</span>
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="w-full sm:w-auto" 
-                  icon={<FaArrowRight />}
+                  className="w-full sm:w-auto opacity-50 cursor-not-allowed" 
+                  icon={<FaCalendar />}
                 >
-                  Explore
+                  Schedule Demo
                 </Button>
                 <Button 
                   variant="secondary" 
                   size="lg" 
                   className="w-full sm:w-auto"
+                  icon={<FaArrowRight />}
+                  onClick={() => window.location.href = '/whitepaper'}
                 >
-                  Learn More
+                  View Whitepaper
                 </Button>
               </div>
 
-              <div className="mt-8 flex items-center space-x-4 text-gray-400 font-['VT323'] text-lg">
+              <div className="mt-8 flex flex-wrap items-center gap-4 text-gray-300 font-['VT323'] text-lg">
                 <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                  <span>8,192 NFTs</span>
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
+                  <span>30-60 Day Development</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
-                  <span>5,000 SOL prize</span>
+                  <span>$35K Total Budget</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-3 h-3 bg-cyan-500 rounded-full mr-2"></div>
-                  <span>13 rounds</span>
+                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                  <span>785% ROI in 90 Days</span>
                 </div>
               </div>
             </motion.div>
@@ -78,15 +80,31 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              {/* Pixel art character placeholder - replace with actual game art */}
-              <div className="w-full h-96 bg-[#1a1025] border-4 border-purple-700 flex items-center justify-center relative overflow-hidden">
-                {/* Placeholder for character art - simulated pixel art */}
-                <div className="w-48 h-48 bg-gradient-to-br from-purple-700 to-cyan-500 relative">
-                  {/* Simulated pixel character outline */}
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOCA0YzEuNSAwIDMgMS41IDMgMy41IDAgMS0xLjUgMS41LTMgMS41cy0zLS41LTMtMS41QzUgNS41IDYuNSA0IDggNHptMCA2YzMgMCA1IDEuNSA1IDR2Mkgzdi0yYzAtMi41IDItNCA1LTR6IiBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=')] opacity-30 mix-blend-overlay"></div>
+              {/* Highlight box for key statistics */}
+              <div className="w-full bg-[#1a1025] border-4 border-purple-700 flex flex-col items-center justify-center relative overflow-hidden p-8">
+                <h3 className="font-['Press_Start_2P'] text-cyan-400 text-xl mb-6">Revenue Projection</h3>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mb-6">
+                  <div className="bg-[#0a0a0a] p-4 border-b-2 border-purple-700">
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">90d</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">$310,000</div>
+                  </div>
+                  
+                  <div className="bg-[#0a0a0a] p-4 border-b-2 border-cyan-500">
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">1yr</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">$590,000</div>
+                  </div>
+                  
+                  <div className="bg-[#0a0a0a] p-4 border-b-2 border-green-500">
+                    <div className="text-4xl font-['Press_Start_2P'] text-gradient mb-2 text-center">ROI</div>
+                    <div className="text-center font-['VT323'] text-2xl text-gray-300">785%</div>
+                  </div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#000] to-transparent"></div>
-                <div className="absolute top-4 left-4 font-['Press_Start_2P'] text-xs">KNIGHT LVL 13</div>
+                
+                <div className="flex items-center justify-center">
+                  <FaRocket className="text-purple-500 mr-2" size={18} />
+                  <span className="font-['VT323'] text-xl text-gray-300">Elite team, accelerated timeline</span>
+                </div>
               </div>
 
               {/* Decorative elements */}

@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
-import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy } from 'react-icons/fa';
+import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy, FaClock } from 'react-icons/fa';
 
 const SmartContracts: React.FC = () => {
   const contracts = [
@@ -11,60 +11,48 @@ const SmartContracts: React.FC = () => {
       id: 'nft-minting',
       icon: <FaCode className="text-purple-700" size={24} />,
       title: 'NFT Minting Contract',
-      description: 'Mints 8,192 NFTs at 1 SOL each (0.9 SOL for presale, 1.1 SOL for public). Assigns each NFT to one of 8 classes with associated metadata (e.g., $EXP multiplier). Distributes revenue: 70% to prize pool, 25% to team, 5% to reserve.',
+      description: 'Secure and efficient NFT minting contract for the 8,192 unique warriors across 8 character classes. Implements Metaplex standards with proper metadata handling and provenance verification.',
       features: [
-        'Secure minting process',
-        'Random class assignment',
-        'Metadata generation',
-        'Revenue distribution',
+        'Efficient mint process',
+        'Metadata management',
+        'Proper royalty distribution',
+        'Collection verification',
       ],
     },
     {
-      id: 'staking',
-      icon: <FaServer className="text-cyan-500" size={24} />,
-      title: 'Staking Contract',
-      description: 'Allows players to stake NFTs and earn $EXP based on class and level. Tracks $EXP earnings and updates NFT metadata (e.g., level). Supports variable earning rates based on NFT class (Lords: 2x, Magicians/Witches: 1.5x) and level progression.',
-      features: [
-        'Secure staking mechanism',
-        'Variable $EXP earning rates',
-        'Metadata updates',
-        'Withdrawal restrictions',
-      ],
-    },
-    {
-      id: 'duel',
+      id: 'battle-system',
       icon: <FaExchangeAlt className="text-amber-500" size={24} />,
-      title: 'Duel Contract',
-      description: 'Manages 1v1 duels by comparing combo grids. Deducts $EXP entry fees and sends them to the team wallet. Burns losing NFTs and updates winner\'s metadata (level up). Handles "Buy a Bye" option for Rounds 1-4. Resolves ties with a 50/50 RNG.',
+      title: 'Battle System Contract',
+      description: 'Core battle mechanics implementing the enhanced Rock/Paper/Scissors system on a 3x3 grid. Handles move validation, outcome determination, and tournament progression with anti-cheat measures.',
       features: [
-        'Rock/Paper/Scissors battle logic',
-        'NFT burning mechanism',
-        'Level progression',
-        'Randomness for tie-breaking',
+        'Strategic combat system',
+        'Move validation',
+        'Outcome verification',
+        'Tournament integration',
       ],
     },
     {
-      id: 'exp-token',
+      id: 'tournament',
+      icon: <FaTrophy className="text-cyan-500" size={24} />,
+      title: 'Tournament Contract',
+      description: 'Tournament management system that handles brackets, progression, and prize distribution. Includes scheduling, registration, and automated prize payments with transparent verifiability.',
+      features: [
+        'Bracket management',
+        'Entry fee handling',
+        'Automated progression',
+        'Prize distribution',
+      ],
+    },
+    {
+      id: 'marketplace',
       icon: <FaChartLine className="text-green-500" size={24} />,
-      title: '$EXP Token Contract',
-      description: 'Manages $EXP minting, distribution, and liquidity. Tracks $EXP used for duel entries and stores it in the team wallet for future seasons. Supports $EXP trading on the open market.',
+      title: 'Marketplace Integration',
+      description: 'Seamless integration with popular Solana marketplaces for secondary trading of warrior NFTs. Handles royalty enforcement and enables trading activity tracking for community rewards.',
       features: [
-        'Token minting and burning',
-        'Transfer restrictions',
-        'Integration with marketplace',
-        'Security features',
-      ],
-    },
-    {
-      id: 'prize-pool',
-      icon: <FaTrophy className="text-amber-500" size={24} />,
-      title: 'Prize Pool Contract',
-      description: 'Stakes the prize pool (5,734 SOL) with Pesky Penguins validator. Distributes prizes to winners and runners-up after Round 13. Tracks staking rewards and allocates them to the reserve.',
-      features: [
-        'Secure prize pool management',
-        'Staking mechanism',
-        'Automated prize distribution',
-        'Reserve allocation',
+        'Royalty enforcement',
+        'Trading analytics',
+        'Marketplace API integration',
+        'Collection verification',
       ],
     }
   ];
@@ -73,8 +61,8 @@ const SmartContracts: React.FC = () => {
     <section className="py-20 bg-[#0a0a0a]" id="contracts">
       <div className="container mx-auto px-6">
         <SectionTitle
-          title="Smart Contract Requirements"
-          subtitle="The technical foundation of Gauntlet of SOLiders"
+          title="Technical Implementation"
+          subtitle="Efficient development with proven technologies"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -112,18 +100,58 @@ const SmartContracts: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 p-8 bg-[#121218] border-2 border-dashed border-purple-700">
-          <h3 className="text-2xl font-['Press_Start_2P'] text-gradient mb-6 text-center">Scalability & Future Development</h3>
-          <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-            Season 1 will focus on establishing the core mechanics and proof-of-concept, with minimal animations and a 
-            focus on core gameplay. This approach keeps overhead low while validating the concept.
-          </p>
-          <p className="text-lg font-['VT323'] text-gray-300">
-            Future seasons will utilize the reserve fund (410 SOL) and accumulated $EXP from Season 1, potentially 
-            adding more animations, side quests (e.g., 5-man melees for bonus $EXP), and other gamification elements 
-            to enhance the player experience.
-          </p>
-        </div>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 p-8 bg-[#121218] border-2 border-dashed border-purple-700"
+        >
+          <div className="flex items-center mb-6 justify-center">
+            <FaClock className="text-purple-500 mr-4" size={30} />
+            <h3 className="text-2xl font-['Press_Start_2P'] text-gradient text-center">Accelerated Development Approach</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="text-xl font-['Press_Start_2P'] text-purple-400 mb-4">Efficient Development</h4>
+              <p className="text-lg font-['VT323'] text-gray-300 mb-4">
+                Our elite blockchain development team can deliver the complete technical implementation in just 30-60 days 
+                by leveraging pre-built frameworks, streamlined workflows, and specialized expertise.
+              </p>
+              <p className="text-lg font-['VT323'] text-gray-300">
+                The accelerated approach focuses on robust core features first, with additional enhancements 
+                planned for post-launch updates based on community feedback and gameplay data.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Technology Stack</h4>
+              <ul className="space-y-2">
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <strong className="text-white mr-2">Blockchain:</strong> Solana (high-speed, low-cost transactions)
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <strong className="text-white mr-2">Smart Contracts:</strong> Rust with Anchor framework
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <strong className="text-white mr-2">Frontend:</strong> React.js with TypeScript
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <strong className="text-white mr-2">Game Engine:</strong> Custom WebGL with PixiJS
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <strong className="text-white mr-2">DevOps:</strong> CI/CD pipeline for rapid iteration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

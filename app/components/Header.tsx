@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaCalendar } from 'react-icons/fa';
+import Button from './Button';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,71 +22,85 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'Game Overview', href: '#overview' },
     { name: 'Core Mechanics', href: '#mechanics' },
-    { name: 'Prize Pool', href: '#prize-pool' },
+    { name: 'Investment', href: '#prize-pool' },
     { name: 'Visuals', href: '#visuals' },
-    { name: 'Smart Contracts', href: '#contracts' },
+    { name: 'Technical', href: '#contracts' },
   ];
 
   return (
-    <header
-      className={`
-        fixed top-0 left-0 right-0 z-50
-        transition-all duration-300
-        py-4 px-6 md:px-12
-        ${scrolled ? 'bg-[#0a0a0a] shadow-md' : 'bg-transparent'}
-      `}
-    >
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/">
-          <div className="text-xl md:text-2xl font-['Press_Start_2P'] text-gradient">
-            G.o.S
-          </div>
-        </Link>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0a0a]/95 backdrop-blur-sm py-3 shadow-lg' : 'bg-transparent py-5'}`}>
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <Link href="/">
+            <div className="flex items-center">
+              <img src="/images/gauntlet-logo.png" alt="Gauntlet of SOLiders" className="h-9 mr-3" />
+              <span className="text-lg text-white font-['Press_Start_2P'] hidden sm:block">
+                <span className="text-gradient">SOLiders</span>
+              </span>
+            </div>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              href={link.href}
-              className="text-white hover:text-cyan-400 transition-colors font-['VT323'] text-xl"
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-6">
+            {navLinks.map((link, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
+                <Link href={link.href} className="text-gray-300 hover:text-cyan-400 font-['VT323'] text-lg px-1 py-2 transition-colors">
+                  {link.name}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: navLinks.length * 0.1 }}
             >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+              <Button size="sm" icon={<FaCalendar />}>
+                Schedule Demo
+              </Button>
+            </motion.div>
+          </nav>
 
-        {/* Mobile Navigation Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
-      </div>
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-300 focus:outline-none"
+          >
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
 
-      {/* Mobile Navigation Menu */}
-      {isOpen && (
+        {/* Mobile Navigation */}
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-[#121212] absolute left-0 right-0 p-6 shadow-lg"
+          initial={false}
+          animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="md:hidden overflow-hidden"
         >
-          <div className="flex flex-col space-y-4">
-            {navLinks.map((link) => (
+          <nav className="flex flex-col space-y-4 pt-4 pb-6">
+            {navLinks.map((link, index) => (
               <Link
-                key={link.name}
+                key={index}
                 href={link.href}
-                className="text-white hover:text-cyan-400 transition-colors font-['VT323'] text-xl"
+                className="text-gray-300 hover:text-cyan-400 font-['VT323'] text-xl px-2 py-1 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-          </div>
+            <div className="pt-2">
+              <Button size="sm" className="w-full" icon={<FaCalendar />}>
+                Schedule Demo
+              </Button>
+            </div>
+          </nav>
         </motion.div>
-      )}
+      </div>
     </header>
   );
 };

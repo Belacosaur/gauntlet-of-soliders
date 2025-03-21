@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
 import Card from '../components/Card';
-import { FaGem, FaFire, FaGamepad, FaStar } from 'react-icons/fa';
+import { FaGem, FaFire, FaGamepad, FaStar, FaRocket, FaTrophy } from 'react-icons/fa';
 
 const Overview: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Overview: React.FC = () => {
       <div className="container mx-auto px-6">
         <SectionTitle
           title="Game Overview"
-          subtitle="Gauntlets and Greatswords with Web3 Integration"
+          subtitle="Strategic Medieval Battles on Solana"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -22,16 +22,19 @@ const Overview: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-6">Title & Platform</h3>
+            <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-6">Game & Investment</h3>
             <div className="space-y-4 text-lg font-['VT323'] text-gray-300">
               <p>
-                <span className="text-white font-bold">Title:</span> Gauntlets and Greatswords
+                <span className="text-white font-bold">Development:</span> 30-60 day accelerated timeline
               </p>
               <p>
-                <span className="text-white font-bold">Platform:</span> Solana blockchain, using smart contracts for NFT minting, staking, duels, and $EXP token management.
+                <span className="text-white font-bold">Total Budget:</span> $35,000 (all-inclusive)
               </p>
               <p>
-                <span className="text-white font-bold">Tagline:</span> "1 SOL in, 5,000 SOL out—survive the gauntlet with skill and grit."
+                <span className="text-white font-bold">ROI Potential:</span> 5-10x return within 90 days
+              </p>
+              <p>
+                <span className="text-white font-bold">Platform:</span> Solana blockchain, using smart contracts for NFT minting, battles, and tournament systems
               </p>
             </div>
           </motion.div>
@@ -44,18 +47,18 @@ const Overview: React.FC = () => {
           >
             <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-6">Premise</h3>
             <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-              A medieval NFT duel game where 8,192 pixel-art warriors enter, and 1 survives after 13 rounds, claiming a 5,000 SOL grand prize.
+              A medieval NFT battle game where players collect unique warrior NFTs and compete in strategic duels, tournaments, and special events.
             </p>
             <p className="text-lg font-['VT323'] text-gray-300">
-              Players mint NFTs, stake them to earn $EXP, and fight through rounds using a strategic "Rock/Paper/Scissors" combo mechanic. Losers' NFTs are burned, driving rarity, while winners level up and progress toward the ultimate prize.
+              Players mint NFTs, compete in tournaments using a strategic "Rock/Paper/Scissors" combo mechanic on a 3x3 grid, and earn rewards based on skill and strategy. Our unique approach balances accessibility with depth.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <Card
-            title="High Stakes"
-            content="8,192 NFTs at 1 SOL each, with a 5,000 SOL grand prize. Losers' NFTs are burned, increasing rarity with each round."
+            title="Collectible NFTs"
+            content="8,192 unique warrior NFTs across 8 distinct character classes, each with strategic advantages in battle."
             icon={<FaGem />}
             variant="primary"
           />
@@ -68,19 +71,35 @@ const Overview: React.FC = () => {
           />
           
           <Card
-            title="NFT Classes"
-            content="8 character classes (Knight, Monk, Lord, Cleric, Magician, Witch, Thief, Bard) with unique $EXP earning rates."
-            icon={<FaStar />}
+            title="Competitive Tournaments"
+            content="Regular competitions with prize pools for skilled players that create ongoing engagement and revenue."
+            icon={<FaTrophy />}
             variant="accent"
           />
           
           <Card
             title="Token Economy"
-            content="Stake NFTs to earn $EXP, pay entry fees for duels, and utilize special options like 'Buy a Bye' for strategic advantages."
+            content="Sustainable economic model with multiple revenue streams including NFT sales, tournament fees, and marketplace royalties."
             icon={<FaFire />}
             variant="primary"
           />
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-[#121218] p-6 border-2 border-dashed border-cyan-500 rounded-md"
+        >
+          <div className="flex items-center mb-4">
+            <FaRocket className="text-cyan-400 mr-4" size={24} />
+            <h3 className="text-xl font-['Press_Start_2P'] text-gradient">Accelerated Development</h3>
+          </div>
+          <p className="text-lg font-['VT323'] text-gray-300">
+            Our elite development team leverages pre-built frameworks and extensive blockchain gaming experience to deliver this complete project in just 30-60 days. This compressed timeline becomes a market advantage, allowing for rapid deployment and quick iteration while maintaining excellent quality.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

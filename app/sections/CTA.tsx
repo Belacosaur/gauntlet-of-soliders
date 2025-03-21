@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '../components/Button';
-import { FaArrowRight, FaDiscord, FaTwitter } from 'react-icons/fa';
+import { FaArrowRight, FaDiscord, FaTwitter, FaCalendar, FaDollarSign, FaRocket, FaUsers } from 'react-icons/fa';
 
 const CTA: React.FC = () => {
   return (
@@ -26,37 +26,37 @@ const CTA: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl md:text-5xl font-['Press_Start_2P'] text-gradient leading-tight mb-8">
-              Ready to Build Your Blockchain Game?
+              Ready to Launch Your Blockchain Game?
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 font-['VT323'] mb-8 max-w-3xl mx-auto">
-              Gauntlet of SOLiders combines NFT technology, game theory, and engaging mechanics to create a unique gaming experience with real financial incentives.
+              Gauntlet of SOLiders delivers exceptional ROI with an accelerated 30-60 day development timeline and minimal upfront investment of just $35,000.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto"
-                icon={<FaDiscord />}
+                icon={<FaCalendar />}
               >
-                Join Discord
+                Schedule Demo
               </Button>
               <Button 
                 variant="secondary" 
                 size="lg" 
                 className="w-full sm:w-auto"
-                icon={<FaTwitter />}
+                icon={<FaArrowRight />}
               >
-                Follow on Twitter
+                Start Development
               </Button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
               {[
-                { label: 'NFTs', value: '8,192' },
-                { label: 'Grand Prize', value: '5,000 SOL' },
-                { label: 'Total Rounds', value: '13' },
-                { label: 'Character Classes', value: '8' },
+                { label: 'Development Timeline', value: '30-60 Days', icon: <FaCalendar className="text-purple-500" /> },
+                { label: 'Total Investment', value: '$35,000', icon: <FaDollarSign className="text-purple-500" /> },
+                { label: '90-Day Revenue', value: '$310,000', icon: <FaRocket className="text-purple-500" /> },
+                { label: 'Collection Size', value: '8,192 NFTs', icon: <FaUsers className="text-purple-500" /> },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -66,8 +66,11 @@ const CTA: React.FC = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="bg-[#0a0a0a] p-6 text-center border-b-4 border-purple-700"
                 >
-                  <div className="text-3xl font-['Press_Start_2P'] text-cyan-400 mb-2">{stat.value}</div>
-                  <div className="text-xl font-['VT323'] text-gray-300">{stat.label}</div>
+                  <div className="flex justify-center mb-3">
+                    {stat.icon}
+                  </div>
+                  <div className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-2">{stat.value}</div>
+                  <div className="text-lg font-['VT323'] text-gray-300">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -80,13 +83,16 @@ const CTA: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 p-8 bg-[#0a0a0a] border-2 border-dashed border-cyan-500 max-w-2xl mx-auto"
           >
-            <h3 className="text-xl font-['Press_Start_2P'] text-gradient mb-6">Final Pitch</h3>
+            <h3 className="text-xl font-['Press_Start_2P'] text-gradient mb-6">Why Partner With Us</h3>
             <div className="space-y-4 text-lg font-['VT323'] text-gray-300">
               <p>
-                <span className="text-white font-bold">For Players:</span> Mint a pixel-art warrior for 1 SOL, stake to earn $EXP, and duel through 13 rounds using strategic combos. Survive to claim the 5,000 SOL grand prize!
+                <span className="text-white font-bold">Efficient Development:</span> Our elite team delivers complete projects in 30-60 days, leveraging expertise in blockchain gaming and pre-built components.
               </p>
               <p>
-                <span className="text-white font-bold">For Investors:</span> 8,192 NFTs on Solana battle for a 5,000 SOL prize. $EXP scarcity and NFT burns drive floor prices, with huge upside as the game progresses.
+                <span className="text-white font-bold">Exceptional ROI:</span> Projected 90-day revenue of $310,000 from a $35,000 investment—a potential 785% return within the first three months.
+              </p>
+              <p>
+                <span className="text-white font-bold">Sustainable Growth:</span> Multiple revenue streams from NFT sales, marketplace royalties, and tournament fees create long-term value.
               </p>
             </div>
             <div className="mt-8 flex justify-center">
@@ -95,7 +101,7 @@ const CTA: React.FC = () => {
                 size="lg" 
                 icon={<FaArrowRight />}
               >
-                Contact Us
+                Let's Build Together
               </Button>
             </div>
           </motion.div>
