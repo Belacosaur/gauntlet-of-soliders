@@ -268,14 +268,16 @@ This marketing plan outlines the accelerated strategy for launching and sustaini
 
 ## Marketing Budget Allocation
 
+### Total Marketing Budget: $10,000
+
 | Marketing Category | Percentage | Allocation |
 |-------------------|------------|------------|
-| Community Building | 35% | $2,100 |
-| Content Creation | 30% | $1,800 |
-| Influencer Marketing | 20% | $1,200 |
-| Paid Advertising | 10% | $600 |
-| PR & Events | 5% | $300 |
-| **Total Marketing Budget** | **100%** | **$6,000** |
+| Social Media Management & Community Building | 30% | $3,000 |
+| Content Creation & Design | 35% | $3,500 |
+| Influencer Marketing | 15% | $1,500 |
+| Paid Advertising | 10% | $1,000 |
+| PR & Events | 10% | $1,000 |
+| **Total Marketing Budget** | **100%** | **$10,000** |
 
 ### Budget Phasing
 
@@ -283,6 +285,62 @@ This marketing plan outlines the accelerated strategy for launching and sustaini
 - **Development (Days 6-40)**: 30% of budget
 - **Pre-launch (Days 41-55)**: 35% of budget
 - **Launch (Days 56-60)**: 20% of budget
+
+## Marketing Services Breakdown
+
+### Social Media Management & Community Building ($3,000)
+
+**Services Included:**
+- Full-time community management across Discord, Twitter, and other platforms
+- 24/7 moderation and engagement
+- Community event planning and execution
+- Ambassador program management
+- Community analytics and reporting
+- Crisis management and response planning
+
+### Content Creation & Design ($3,500)
+
+**Services Included:**
+- High-quality graphic design for all marketing materials
+- Video production for trailers and promotional content
+- Written content (blogs, guides, documentation)
+- Social media visual assets
+- UI/UX design for marketing website and minting platform
+- Animation and motion graphics
+- Pixel art creation for marketing assets
+
+### Influencer Marketing ($1,500)
+
+**Services Included:**
+- Strategic partnerships with Web3 gaming influencers
+- Tier 1: Major influencers (1-2 partners)
+- Tier 2: Mid-level creators (3-5 partners)
+- Tier 3: Micro-influencers (5-10 partners)
+- Custom campaign design and management
+- Performance tracking and optimization
+- Influencer relationship management
+
+### Paid Advertising ($1,000)
+
+**Services Included:**
+- Strategic ad placement across relevant platforms
+- Campaign design and creative production
+- Audience targeting and segmentation
+- A/B testing of ad creative and copy
+- Performance tracking and optimization
+- Budget management and allocation
+- ROI analysis and reporting
+
+### PR & Events ($1,000)
+
+**Services Included:**
+- Press release creation and distribution
+- Media outreach to gaming and crypto publications
+- Interview coordination and preparation
+- Press kit development
+- Virtual event planning and execution
+- AMAs and Twitter Spaces organization
+- Industry relationship building
 
 ## Performance Metrics and KPIs
 
@@ -337,6 +395,8 @@ This marketing plan outlines the accelerated strategy for launching and sustaini
 ## Conclusion
 
 This accelerated marketing plan provides a framework for building awareness, driving engagement, and ensuring the successful launch of Gauntlet of SOLiders within the compressed 30-60 day development timeline. By focusing on rapid community building, strategic partnerships, and quality content creation, the plan aims to establish Gauntlet of SOLiders as a premier Web3 gaming experience on Solana.
+
+The strategic allocation of our $10,000 marketing budget ensures comprehensive coverage of all marketing needs while maintaining cost efficiency. Our in-house marketing team will provide expert services across social media management, content creation, influencer marketing, paid advertising, and PR, delivering maximum impact for our investment.
 
 The compressed timeline becomes a marketing advantage, positioning the project as agile, efficient, and led by a highly skilled team capable of delivering exceptional quality at unprecedented speed. This narrative itself becomes a differentiator in the market, creating additional interest and buzz around the project.
 
