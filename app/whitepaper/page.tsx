@@ -61,13 +61,6 @@ const WhitepaperPage = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="px-4 py-2 bg-purple-700 rounded-md flex items-center">
-              <FaDownload className="mr-2" />
-              Download PDF
-            </button>
-          </div>
-          
           <div className="md:hidden">
             <button 
               onClick={() => setShowTOC(!showTOC)}
