@@ -51,13 +51,14 @@ Estimated development timeframe: **30-60 days** for either package
 
 The extended package includes all elements from the base package, plus:
 
-### Double or Nothing Gambling Feature ($8,000)
+### Premium Features ($8,000)
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Gambling System Development | Post-battle gambling mechanics and UI | $4,000 |
-| Visual & Audio Assets | Gambling animations, effects, and sound design | $2,500 |
-| Smart Contract Integration | Secure randomness generation and EXP management | $1,500 |
+| Double or Nothing System | Post-battle EXP gambling system with randomness generation | $3,000 |
+| Animations & Visuals | Animated backgrounds and battle outcome comparisons | $2,500 |
+| Audio Design | Background music and responsive sound effects | $1,500 |
+| UI Enhancement | Improved transitions and visual feedback | $1,000 |
 | **Subtotal** | | **$8,000** |
 
 ## Development Efficiency Factors

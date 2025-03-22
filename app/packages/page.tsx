@@ -116,20 +116,20 @@ const PackagesPage = () => {
                 </div>
                 
                 <p className="text-lg font-['VT323'] text-gray-300 mb-6">
-                  The Extended Package includes everything in the Base Package, plus a "Double or Nothing" gambling system that allows players to risk their EXP winnings for a chance to double them.
+                  The Extended Package includes everything in the Base Package, plus premium features like the Double or Nothing gambling system, animated backgrounds, battle animations, and music/sound effects.
                 </p>
                 
                 <h4 className="text-lg font-['Press_Start_2P'] text-amber-400 mb-4">Includes Everything in Base Package, Plus:</h4>
                 <ul className="space-y-3 mb-6">
                   {[
-                    'Double or Nothing gambling system',
-                    'Risk/reward gameplay mechanics',
-                    'Enhanced gambling UI',
-                    'Double-up UI animations',
-                    'Gambling sound effects',
-                    'Multiple risk tier options',
-                    'Animated result reveals',
-                    'EXP multiplier system'
+                    'Double or Nothing EXP gambling system (after each round)',
+                    'Animated backgrounds',
+                    'Animated battle outcome comparisons (sword beats sorcery, etc)',
+                    'Music and Sound Effects',
+                    'Enhanced visual experience',
+                    'Audio feedback for player actions',
+                    'Gameplay atmosphere enhancements',
+                    'Greater player engagement'
                   ].map((feature, index) => (
                     <li key={index} className="flex items-center text-md font-['VT323'] text-gray-300">
                       <FaStar className="text-amber-500 mr-2" size={16} />
@@ -139,13 +139,13 @@ const PackagesPage = () => {
                 </ul>
 
                 <div className="mt-6">
-                  <h4 className="text-lg font-['Press_Start_2P'] text-amber-400 mb-3">Gambling System:</h4>
+                  <h4 className="text-lg font-['Press_Start_2P'] text-amber-400 mb-3">Premium Features:</h4>
                   <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                    <li>Secure randomness generation for gambling outcomes</li>
-                    <li>Integrated within the Staking Contract for EXP management</li>
-                    <li>Dynamic gambling interface with animations</li>
-                    <li>Win/loss animations and visual feedback</li>
-                    <li>Multiple risk tiers for different player preferences</li>
+                    <li><span className="text-amber-500">Gambling System:</span> Post-battle EXP gambling with randomness generation</li>
+                    <li><span className="text-amber-500">Animations:</span> Animated backgrounds and battle outcome visualizations</li>
+                    <li><span className="text-amber-500">Audio:</span> Background music and responsive sound effects</li>
+                    <li><span className="text-amber-500">Visual Polish:</span> Enhanced UI transitions and feedback</li>
+                    <li><span className="text-amber-500">Player Experience:</span> More immersive and engaging gameplay</li>
                   </ul>
                 </div>
                 

@@ -125,9 +125,10 @@ Our game addresses these challenges through:
 
 - **Extended Package: $28,000**
   - Everything in the base package
-  - Double or Nothing gambling feature
-  - Enhanced gambling UI and animations
-  - Risk/reward EXP multiplier system
+  - Double or Nothing EXP gambling system
+  - Animated backgrounds and battle outcomes
+  - Music and sound effects
+  - Enhanced visual experience
 
 - **Marketing Package: $10,000** (Optional)
   - Community management
