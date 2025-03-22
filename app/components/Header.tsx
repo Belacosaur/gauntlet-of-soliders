@@ -25,6 +25,8 @@ const Header: React.FC = () => {
     { name: 'Investment', href: '#prize-pool' },
     { name: 'Visuals', href: '#visuals' },
     { name: 'Technical', href: '#contracts' },
+    { name: 'Design Tips', href: '/design-tips' },
+    { name: 'Whitepaper', href: '/whitepaper' },
   ];
 
   return (
