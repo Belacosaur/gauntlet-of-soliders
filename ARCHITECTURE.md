@@ -38,11 +38,8 @@ The system is designed with a Web3 architecture pattern, consisting of:
 ### High-Level Components
 
 1. **Smart Contracts Layer** (Solana Programs)
-   - NFT minting and metadata management
-   - Staking mechanism
-   - Duel system
-   - $EXP token management
-   - Prize pool management
+   - Battle Contract (tournament logistics, battle mechanics, prize pool)
+   - Staking Contract (NFT management, $EXP token economy, Double or Nothing gambling)
 
 2. **Frontend Layer**
    - Web application (React/Next.js)
@@ -86,19 +83,14 @@ The system is designed with a Web3 architecture pattern, consisting of:
 │                                              │
 │             Solana Blockchain                │
 │                                              │
-│  ┌────────────┐ ┌─────────┐ ┌────────────┐  │
-│  │            │ │         │ │            │  │
-│  │ NFT        │ │ Staking │ │ Duel       │  │
-│  │ Program    │ │ Program │ │ Program    │  │
-│  │            │ │         │ │            │  │
-│  └────────────┘ └─────────┘ └────────────┘  │
-│                                              │
-│  ┌────────────┐ ┌────────────────────────┐  │
-│  │            │ │                        │  │
-│  │ $EXP Token │ │ Prize Pool             │  │
-│  │ Program    │ │ Program                │  │
-│  │            │ │                        │  │
-│  └────────────┘ └────────────────────────┘  │
+│  ┌────────────────────┐ ┌─────────────────┐  │
+│  │                    │ │                 │  │
+│  │ Battle Contract    │ │ Staking Contract│  │
+│  │ - Tournament       │ │ - NFT Staking   │  │
+│  │ - Battle Logic     │ │ - $EXP Token    │  │
+│  │ - Prize Pool       │ │ - Double or     │  │
+│  │                    │ │   Nothing       │  │
+│  └────────────────────┘ └─────────────────┘  │
 │                                              │
 └──────────────────────────────────────────────┘
 ```
@@ -336,6 +328,14 @@ The frontend application provides the user interface for players to interact wit
 4. Submit combo
 5. Wait for opponent and battle resolution
 6. View results (win/loss)
+7. If victorious, option to enter Double or Nothing gambling system
+
+**Double or Nothing Gambling Flow**:
+1. After battle victory, presented with gambling option
+2. Choose risk level (25%, 50%, 75%, or 100% of winnings)
+3. Confirm gambling transaction
+4. Animated outcome sequence reveals double winnings or loss
+5. Updated $EXP balance reflected in account
 
 #### 3. UI Design
 
@@ -475,11 +475,12 @@ Security is paramount for blockchain applications. Key security considerations i
 
 ### 1. Smart Contract Security
 
-- **Audit Requirements**: Professional audit by reputable firms (e.g., CertiK, Halborn)
-- **Access Control**: Proper permission management for admin functions
-- **Reentrancy Protection**: Guards against reentrancy attacks
-- **Integer Overflow Protection**: Safe math operations
-- **Randomness Security**: Secure randomness sources or commitment schemes
+- **Audit Requirements**: Professional audit of both Battle and Staking Contracts by reputable firms (e.g., CertiK, Halborn)
+- **Simplified Attack Surface**: Reduced complexity with just two contracts minimizes potential security vulnerabilities
+- **Secure Randomness**: Verified secure randomness for battle outcomes and Double or Nothing gambling system
+- **Access Control**: Proper permission management with role-based controls for tournament and prize functions
+- **Transaction Guards**: Protection against transaction manipulation in high-value operations
+- **Economic Analysis**: Thorough testing of the Double or Nothing gambling mechanics to prevent economic exploits
 
 ### 2. Frontend Security
 

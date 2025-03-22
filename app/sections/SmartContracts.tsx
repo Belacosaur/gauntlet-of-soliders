@@ -3,56 +3,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
-import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy, FaClock, FaMedal } from 'react-icons/fa';
+import { FaExchangeAlt, FaServer, FaTrophy, FaCoins, FaClock, FaMedal } from 'react-icons/fa';
 
 const SmartContracts: React.FC = () => {
   const contracts = [
     {
-      id: 'staking',
-      icon: <FaServer className="text-red-700" size={24} />,
-      title: 'Staking Contract',
-      description: 'Allows players to stake their warrior NFTs to earn $EXP tokens over time. Includes variable earning rates based on warrior class and level, with secure claiming mechanisms.',
-      features: [
-        'NFT staking & unstaking',
-        'Time-based $EXP rewards',
-        'Variable class-based rates',
-        'Security against exploits',
-      ],
-    },
-    {
       id: 'battle-system',
-      icon: <FaExchangeAlt className="text-amber-500" size={24} />,
-      title: 'Battle System Contract',
-      description: 'Core battle mechanics implementing the enhanced Rock/Paper/Scissors system on a 3x3 grid. Handles move validation, outcome determination, and tournament progression with anti-cheat measures.',
+      icon: <FaExchangeAlt className="text-red-700" size={24} />,
+      title: 'Battle Contract',
+      description: 'The comprehensive battle contract implements the enhanced Rock/Paper/Scissors system, tournament structure, and prize pool management in a single optimized smart contract.',
       features: [
         'Strategic combat system',
-        'Commit-reveal pattern',
-        'Outcome verification',
-        'Anti-cheat protection',
+        'Tournament management',
+        'Prize pool distribution',
+        'Commit-reveal battle pattern',
+        'Anti-cheat protections',
+        'Multiple tournament tiers',
+        'Secure randomness generation',
+        'Transparent payouts'
       ],
     },
     {
-      id: 'token',
-      icon: <FaChartLine className="text-green-500" size={24} />,
-      title: '$EXP Token Contract',
-      description: 'Manages the $EXP token economy which powers the game ecosystem. Includes controlled minting through staking, transfer functions, and burning mechanics for tournament entry fees.',
+      id: 'staking',
+      icon: <FaServer className="text-amber-500" size={24} />,
+      title: 'Staking & Economy Contract',
+      description: 'This unified smart contract handles NFT staking, $EXP token management, and the entire in-game economy including the Double or Nothing gambling feature in the Extended Package.',
       features: [
-        'SPL token standard',
-        'Controlled minting',
-        'Tournament fee integration',
-        'Secure ownership model',
-      ],
-    },
-    {
-      id: 'prize-pool',
-      icon: <FaTrophy className="text-red-500" size={24} />,
-      title: 'Prize Pool Contract',
-      description: 'Manages tournament prize pools and automated distribution to winners. Includes transparency mechanisms, staking of prize pool funds for additional rewards, and secure multi-sig controls.',
-      features: [
-        'Transparent allocation',
-        'Automated distribution',
-        'Prize pool staking',
-        'Multi-sig security',
+        'NFT staking & unstaking',
+        '$EXP token implementation',
+        'Time-based rewards system',
+        'Double or Nothing gambling',
+        'Variable earning rates',
+        'Token burning mechanics',
+        'Security against exploits',
+        'Economy balancing tools'
       ],
     }
   ];
@@ -61,8 +45,8 @@ const SmartContracts: React.FC = () => {
     <section className="py-20 bg-[#0a0a0a]" id="contracts">
       <div className="container mx-auto px-6">
         <SectionTitle
-          title="Technical Implementation"
-          subtitle="Efficient development with proven technologies"
+          title="Smart Contract Architecture"
+          subtitle="Efficient implementation with just two powerful contracts"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -109,20 +93,29 @@ const SmartContracts: React.FC = () => {
         >
           <div className="flex items-center mb-6 justify-center">
             <FaClock className="text-red-500 mr-4" size={30} />
-            <h3 className="text-2xl font-['Press_Start_2P'] text-gradient text-center">Accelerated Development Approach</h3>
+            <h3 className="text-2xl font-['Press_Start_2P'] text-gradient text-center">Streamlined Contract Architecture</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Efficient Development</h4>
+              <h4 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Benefits of Our Approach</h4>
               <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-                Our elite blockchain development team can deliver the complete technical implementation in just 30-60 days 
-                by leveraging pre-built frameworks, streamlined workflows, and specialized expertise.
+                Our streamlined two-contract architecture delivers significant advantages over traditional multi-contract systems. By consolidating related functionality, we achieve:
               </p>
-              <p className="text-lg font-['VT323'] text-gray-300">
-                The accelerated approach focuses on robust core features first, with additional enhancements 
-                planned for post-launch updates based on community feedback and gameplay data.
-              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
+                  <strong className="text-white mr-2">Lower Gas Costs:</strong> Fewer cross-contract calls
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
+                  <strong className="text-white mr-2">Simplified Security:</strong> Reduced attack surface
+                </li>
+                <li className="flex items-center text-lg font-['VT323'] text-gray-300">
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
+                  <strong className="text-white mr-2">Faster Development:</strong> Streamlined integration testing
+                </li>
+              </ul>
             </div>
             
             <div>

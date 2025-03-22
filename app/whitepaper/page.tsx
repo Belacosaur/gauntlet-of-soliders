@@ -422,16 +422,23 @@ const WhitepaperPage = () => {
                         <li>Energy-efficient Proof-of-Stake consensus aligns with environmental concerns</li>
                       </ul>
                       
-                      <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">NFT Standard</h4>
+                      <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Smart Contract Architecture</h4>
                       <p className="mt-4 font-['VT323'] text-xl">
-                        We use Solana's Token Metadata standard on Solana, which provides:
+                        Our streamlined two-contract system maximizes efficiency and security:
                       </p>
                       <ul className="space-y-2 list-disc pl-5 text-gray-300 font-['VT323'] text-lg">
-                        <li>Solana's proven Token Programs for blockchain functionality</li>
-                        <li>Magic Eden integration for NFT marketplace features</li>
-                        <li>Redis for high-performance caching and leaderboards</li>
-                        <li>PostgreSQL for persistent data storage</li>
-                        <li>WebSockets for real-time battle updates</li>
+                        <li><span className="text-red-400">Battle Contract:</span> Handles all tournament logistics, battle mechanics, and prize pool distribution</li>
+                        <li><span className="text-red-400">Staking Contract:</span> Manages NFT staking, $EXP token economy, and the Double or Nothing gambling system</li>
+                      </ul>
+                      
+                      <p className="mt-4 font-['VT323'] text-xl">
+                        Benefits of our simplified architecture:
+                      </p>
+                      <ul className="space-y-2 list-disc pl-5 text-gray-300 font-['VT323'] text-lg">
+                        <li>Reduced gas fees through optimized contract interactions</li>
+                        <li>Simplified security auditing process</li>
+                        <li>Faster development and deployment cycles</li>
+                        <li>Clearer separation of concerns for maintenance</li>
                       </ul>
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Smart Contract Security</h4>
@@ -897,17 +904,17 @@ enum WarriorClass {
                         <div>
                           <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">Can the smart contracts be upgraded if needed?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
-                            Yes, we implement upgradability with strict governance: program upgradability is 
-                            managed through Solana's upgradable BPF loader, multisig approval process required 
-                            for modifications, transparent upgrade process with community notification, and 
-                            defined limits to protect user assets.
+                            Yes, we implement upgradability with strict governance: both our Battle Contract and Staking Contract 
+                            are managed through Solana's upgradable BPF loader, requiring multisig approval for any 
+                            modifications. Our transparent upgrade process includes community notification and 
+                            defined limits to protect user assets and maintain game integrity.
                           </p>
                         </div>
                         
                         <div>
                           <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How do you handle chain congestion or outages?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
-                            We implement several resilience strategies: transaction retry mechanisms with 
+                            We implement several resilience strategies across both contracts: transaction retry mechanisms with 
                             exponential backoff, state channel architecture for critical gameplay during chain 
                             congestion, local state maintenance with deferred on-chain reconciliation, and 
                             multiple RPC endpoint providers with automatic failover.
@@ -923,10 +930,10 @@ enum WarriorClass {
                         <div>
                           <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How is the $EXP token technically implemented?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
-                            The $EXP token implementation includes: SPL Token standard on Solana for maximum 
-                            compatibility, fixed supply model with no mint authority after initial creation, 
-                            automated distribution via on-chain staking contracts, and configurable emission 
-                            schedules based on protocol parameters.
+                            The $EXP token is implemented within our Staking Contract using the SPL Token standard on Solana.
+                            It features a fixed supply model with no mint authority after initial creation,
+                            automated distribution via on-chain staking mechanics, and powers the Double or Nothing gambling system
+                            where players can risk their battle winnings for greater rewards.
                           </p>
                         </div>
                         
@@ -934,7 +941,7 @@ enum WarriorClass {
                           <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">What prevents token inflation or devaluation?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Multiple economic balancing mechanisms are employed: fixed total supply, token 
-                            burning from gameplay activities, utility-driven demand, balanced release schedule, 
+                            burning from gameplay activities and the Double or Nothing system, utility-driven demand, balanced release schedule, 
                             and governance-controlled emission rates that can adapt to market conditions.
                           </p>
                         </div>

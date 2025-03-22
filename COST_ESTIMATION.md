@@ -27,7 +27,7 @@ Estimated development timeframe: **30-60 days** for either package
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Smart Contracts | Complete suite of Solana programs including NFT minting, staking, battle system, token implementation, and prize distribution | $9,000 |
+| Smart Contracts | Two core Solana programs: Battle Contract (tournament/prize pool) and Staking Contract (NFT staking/economy) | $9,000 |
 | Security Measures | Internal security review and hardening measures | $1,500 |
 | **Subtotal** | | **$10,500** |
 
@@ -36,7 +36,7 @@ Estimated development timeframe: **30-60 days** for either package
 | Component | Description | Cost |
 |-----------|-------------|------|
 | Game Interface | Complete battle UI, wallet integration, NFT viewer, staking interface, tournament visualization | $5,500 |
-| Backend Services | Indexer service, tournament management, API development | $2,000 |
+| Backend Services | Tournament management and backend infrastructure | $2,000 |
 | **Subtotal** | | **$7,500** |
 
 ### 3. Design & Testing
@@ -51,21 +51,14 @@ Estimated development timeframe: **30-60 days** for either package
 
 The extended package includes all elements from the base package, plus:
 
-### 1. Enhanced Art & Animation ($4,000)
+### Double or Nothing Gambling Feature ($8,000)
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Animated Sprites | Full animation sets for all character classes | $2,500 |
-| Visual Effects | Polish, transitions, and feedback animations | $1,500 |
-| **Subtotal** | | **$4,000** |
-
-### 2. Double or Nothing Gambling Feature ($4,000)
-
-| Component | Description | Cost |
-|-----------|-------------|------|
-| Gambling System Development | Post-battle gambling mechanics and UI | $2,500 |
-| Visual & Audio Assets | Animation effects and sound design | $1,000 |
-| Smart Contract Integration | Secure randomness generation and EXP management | $500 |
+| Gambling System Development | Post-battle gambling mechanics and UI | $4,000 |
+| Visual & Audio Assets | Gambling animations, effects, and sound design | $2,500 |
+| Smart Contract Integration | Secure randomness generation and EXP management | $1,500 |
+| **Subtotal** | | **$8,000** |
 
 ## Development Efficiency Factors
 

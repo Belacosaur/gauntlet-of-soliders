@@ -55,7 +55,7 @@ Our game addresses these challenges through:
 - **Transaction Speed:** 65,000+ TPS
 - **Transaction Cost:** <$0.01 per transaction
 - **NFT Standard:** Solana NFT standard with Magic Eden integration
-- **Smart Contracts:** Custom battle system and tournament management
+- **Smart Contracts:** Two core contracts - Battle Contract (tournament/prize pool) and Staking Contract (NFT staking/economy)
 - **Wallet Integration:** Support for Phantom, Solflare, and other Solana wallets
 
 ### Front-End Development

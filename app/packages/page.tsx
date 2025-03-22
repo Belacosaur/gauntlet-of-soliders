@@ -107,11 +107,9 @@ const PackagesPage = () => {
                   <div className="mb-6">
                     <h4 className="text-lg font-['Press_Start_2P'] text-amber-400 mb-3">Smart Contracts:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Battle System Contract with commit-reveal pattern</li>
-                      <li>Staking Contract for NFT staking and $EXP earning</li>
-                      <li>$EXP Token Contract for in-game economy</li>
-                      <li>Prize Pool Contract for tournaments</li>
-                      <li>Security measures and optimizations</li>
+                      <li><span className="text-red-400">Battle Contract:</span> Tournament logistics, battle mechanics, prize pool distribution, and commit-reveal pattern</li>
+                      <li><span className="text-red-400">Staking Contract:</span> NFT management, $EXP token economy, and staking rewards</li>
+
                     </ul>
                   </div>
                   
@@ -123,7 +121,6 @@ const PackagesPage = () => {
                       <li>Staking interface for yield management</li>
                       <li>Tournament visualization and brackets</li>
                       <li>Backend services for tournament management</li>
-                      <li>API development and indexer service</li>
                     </ul>
                   </div>
                   
@@ -172,20 +169,20 @@ const PackagesPage = () => {
                   </div>
                   
                   <p className="text-lg font-['VT323'] text-gray-300 mb-6">
-                    The Extended Package includes everything in the Base Package, plus enhanced visual elements and a "Double or Nothing" gambling system that allows players to risk their EXP winnings for a chance to double them.
+                    The Extended Package includes everything in the Base Package, plus a "Double or Nothing" gambling system that allows players to risk their EXP winnings for a chance to double them.
                   </p>
                   
                   <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-4">Includes Everything in Base Package, Plus:</h4>
                   <ul className="space-y-3 mb-6">
                     {[
                       'Double or Nothing gambling system',
-                      'Animated character sprites',
-                      'Enhanced visual effects',
+                      'Risk/reward gameplay mechanics',
+                      'Enhanced gambling UI',
                       'Double-up UI animations',
                       'Gambling sound effects',
-                      'High-risk reward mechanics',
-                      'More immersive user experience',
-                      'Higher-quality art assets'
+                      'Multiple risk tier options',
+                      'Animated result reveals',
+                      'EXP multiplier system'
                     ].map((feature, index) => (
                       <li key={index} className="flex items-center text-md font-['VT323'] text-gray-300">
                         <FaStar className="text-amber-500 mr-2" size={16} />
@@ -198,12 +195,8 @@ const PackagesPage = () => {
                     <h4 className="text-lg font-['Press_Start_2P'] text-amber-400 mb-3">Additional Cost:</h4>
                     <ul className="space-y-2 font-['VT323'] text-gray-300">
                       <li className="flex justify-between">
-                        <span>Enhanced Art & Animation:</span>
-                        <span className="text-white">$4,000</span>
-                      </li>
-                      <li className="flex justify-between">
                         <span>Double or Nothing System:</span>
-                        <span className="text-white">$4,000</span>
+                        <span className="text-white">$8,000</span>
                       </li>
                       <li className="flex justify-between font-bold border-t border-gray-700 mt-2 pt-2">
                         <span>Base Package:</span>
@@ -225,66 +218,31 @@ const PackagesPage = () => {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="bg-[#121218] p-6 rounded-lg border-l-4 border-amber-500"
                 >
-                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Double or Nothing System</h3>
+                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Double or Nothing Gambling</h3>
                   
                   <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-                    The Double or Nothing feature adds an exciting gambling element after battles, allowing players to risk their EXP winnings for a chance to double them.
+                    The Double or Nothing feature includes dedicated animations and visual effects for the gambling system, creating a tense and exciting post-battle experience.
                   </p>
                   
                   <div className="mb-6">
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Gameplay Mechanics:</h4>
+                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Gambling-Specific Visuals:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Post-battle gambling interface</li>
-                      <li>Risk EXP winnings for double rewards</li>
-                      <li>Multiple gambling tiers (50%, 100%, 200%)</li>
-                      <li>Animated results reveal</li>
-                      <li>Fair randomness implementation</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">UI/UX Design:</h4>
-                    <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Responsive gambling interface</li>
-                      <li>Animated transitions and effects</li>
-                      <li>Visual win/loss feedback</li>
-                      <li>Tension-building anticipation effects</li>
-                      <li>Clear risk/reward presentation</li>
-                    </ul>
-                  </div>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="bg-[#121218] p-6 rounded-lg border-l-4 border-amber-500 mt-6"
-                >
-                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Enhanced Visuals & Animation</h3>
-                  
-                  <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-                    The Extended Package includes premium animations and visual effects that elevate the game's presentation and create a more engaging player experience.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Animated Elements:</h4>
-                    <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Character animation frames</li>
-                      <li>Gambling-specific animations</li>
-                      <li>Celebration effects for wins</li>
-                      <li>Impact animations for losses</li>
-                      <li>Dynamic EXP counter animations</li>
+                      <li>Dynamic gambling interface</li>
+                      <li>Win/loss animations</li>
+                      <li>Coin flip or dice roll animations</li>
+                      <li>EXP counter animations</li>
+                      <li>Visual feedback for outcomes</li>
                     </ul>
                   </div>
                   
                   <div>
                     <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Technical Implementation:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Secure randomness generation</li>
-                      <li>Smart contract for Double or Nothing</li>
-                      <li>EXP pool management</li>
-                      <li>Anti-cheat protections</li>
-                      <li>Transaction optimization</li>
+                      <li>Secure randomness generation for gambling outcomes</li>
+                      <li>Integrated within the Staking Contract for EXP management</li>
+                      <li>Shared EXP pool with battle rewards</li>
+                      <li>Anti-cheat protections and security measures</li>
+                      <li>Optimized for low transaction fees</li>
                     </ul>
                   </div>
                 </motion.div>
