@@ -8,7 +8,7 @@ Gauntlet of SOLiders is a medieval fantasy NFT battle game built on the Solana b
 - **Development Timeline:** 30-60 days from start to finish
 - **Development Options:** 
   - Base Package: $20,000 (Limited art, core functions)
-  - Extended Package: $28,000 (Animated sprites, Double or Nothing gambling)
+  - Extended Package: $28,000 (Double or Nothing gambling)
 - **Marketing Package:** $10,000 (Optional, separate)
 - **Unique Selling Points:** Strategic RPS gameplay, 8,192 NFT collection, tournament prize pools
 - **Blockchain:** Solana (low fees, high throughput, eco-friendly)
@@ -125,10 +125,9 @@ Our game addresses these challenges through:
 
 - **Extended Package: $28,000**
   - Everything in the base package
-  - Animated character sprites
   - Double or Nothing gambling feature
-  - Enhanced visual effects
-  - Additional gameplay elements
+  - Enhanced gambling UI and animations
+  - Risk/reward EXP multiplier system
 
 - **Marketing Package: $10,000** (Optional)
   - Community management
