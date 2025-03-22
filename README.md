@@ -19,8 +19,8 @@
 - **Development Timeline**: 30-60 days (accelerated schedule)
 - **Development Options**: 
   - Base Package: $20,000 (Limited art, core functions)
-  - Extended Package: $28,000 (Animated sprites, explorer mini-game)
-- **Marketing Package**: $10,000 (Optional, separate)
+  - Extended Package: $28,000 (Animated sprites, Double or Nothing gambling)
+- **Marketing Package**: $10,000 (Optional)
 - **NFT Collection Size**: 8,192 unique warriors
 - **Target Audience**: Crypto enthusiasts, casual gamers, collectors
 - **Revenue Model**: NFT sales, tournament fees, marketplace royalties
@@ -34,11 +34,11 @@
 
 ## Cost Breakdown
 
-| Package | Includes | Budget | Timeline |
-|----------|--------|----------|----------|
-| Base Game Package | Core gameplay, static sprites, smart contracts | $20,000 | 30-60 days |
-| Extended Game Package | Animated sprites, explorer mini-game, enhanced features | $28,000 | 30-60 days |
-| Marketing Package (Optional) | Community management, content creation, promotion | $10,000 | Ongoing |
+| Package Type | Features | Cost | Timeline |
+|-------------|----------|------|----------|
+| Base Game Package | Static sprites, core gameplay | $20,000 | 30-60 days |
+| Extended Game Package | Animated sprites, Double or Nothing gambling, enhanced features | $28,000 | 30-60 days |
+| Marketing Package | Discord setup, social media, content creation | $10,000 | Ongoing |
 
 ## Key Features
 

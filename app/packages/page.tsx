@@ -172,18 +172,18 @@ const PackagesPage = () => {
                   </div>
                   
                   <p className="text-lg font-['VT323'] text-gray-300 mb-6">
-                    The Extended Package includes everything in the Base Package, plus enhanced visual elements and additional gameplay features for a more immersive blockchain gaming experience.
+                    The Extended Package includes everything in the Base Package, plus enhanced visual elements and a "Double or Nothing" gambling system that allows players to risk their EXP winnings for a chance to double them.
                   </p>
                   
                   <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-4">Includes Everything in Base Package, Plus:</h4>
                   <ul className="space-y-3 mb-6">
                     {[
+                      'Double or Nothing gambling system',
                       'Animated character sprites',
-                      'Explorer mini-game feature',
                       'Enhanced visual effects',
-                      'Additional gameplay elements',
-                      'Advanced UI animations',
-                      'Enhanced battle visual feedback',
+                      'Double-up UI animations',
+                      'Gambling sound effects',
+                      'High-risk reward mechanics',
                       'More immersive user experience',
                       'Higher-quality art assets'
                     ].map((feature, index) => (
@@ -202,7 +202,7 @@ const PackagesPage = () => {
                         <span className="text-white">$4,000</span>
                       </li>
                       <li className="flex justify-between">
-                        <span>Explorer Mini-Game:</span>
+                        <span>Double or Nothing System:</span>
                         <span className="text-white">$4,000</span>
                       </li>
                       <li className="flex justify-between font-bold border-t border-gray-700 mt-2 pt-2">
@@ -225,30 +225,31 @@ const PackagesPage = () => {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="bg-[#121218] p-6 rounded-lg border-l-4 border-amber-500"
                 >
-                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Enhanced Art & Animation</h3>
+                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Double or Nothing System</h3>
                   
                   <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-                    The Extended Package elevates the visual quality with animations and enhanced effects, creating a more dynamic and engaging player experience.
+                    The Double or Nothing feature adds an exciting gambling element after battles, allowing players to risk their EXP winnings for a chance to double them.
                   </p>
                   
                   <div className="mb-6">
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Animated Sprites:</h4>
+                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Gameplay Mechanics:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Animation frames for all character classes</li>
-                      <li>Idle, attack, and victory animations</li>
-                      <li>Fluid character movements</li>
-                      <li>Enhanced pixel art quality</li>
-                      <li>Special move visual feedback</li>
+                      <li>Post-battle gambling interface</li>
+                      <li>Risk EXP winnings for double rewards</li>
+                      <li>Multiple gambling tiers (50%, 100%, 200%)</li>
+                      <li>Animated results reveal</li>
+                      <li>Fair randomness implementation</li>
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Visual Effects:</h4>
+                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">UI/UX Design:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Enhanced battle animations</li>
-                      <li>UI transitions and effects</li>
-                      <li>Dynamic lighting and particle effects</li>
-                      <li>Polish and visual feedback throughout</li>
+                      <li>Responsive gambling interface</li>
+                      <li>Animated transitions and effects</li>
+                      <li>Visual win/loss feedback</li>
+                      <li>Tension-building anticipation effects</li>
+                      <li>Clear risk/reward presentation</li>
                     </ul>
                   </div>
                 </motion.div>
@@ -259,30 +260,31 @@ const PackagesPage = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="bg-[#121218] p-6 rounded-lg border-l-4 border-amber-500 mt-6"
                 >
-                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Explorer Mini-Game</h3>
+                  <h3 className="text-xl font-['Press_Start_2P'] text-amber-400 mb-4">Enhanced Visuals & Animation</h3>
                   
                   <p className="text-lg font-['VT323'] text-gray-300 mb-4">
-                    The Explorer mini-game adds a whole new dimension to gameplay, giving players additional ways to interact with the game world and earn rewards.
+                    The Extended Package includes premium animations and visual effects that elevate the game's presentation and create a more engaging player experience.
                   </p>
                   
                   <div className="mb-6">
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Mini-Game Features:</h4>
+                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Animated Elements:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Exploration gameplay mechanics</li>
-                      <li>Environmental hazards and challenges</li>
-                      <li>Treasure hunting mechanics</li>
-                      <li>Additional rewards and items</li>
-                      <li>Seamless integration with main game</li>
+                      <li>Character animation frames</li>
+                      <li>Gambling-specific animations</li>
+                      <li>Celebration effects for wins</li>
+                      <li>Impact animations for losses</li>
+                      <li>Dynamic EXP counter animations</li>
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Mini-Game Assets:</h4>
+                    <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Technical Implementation:</h4>
                     <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                      <li>Environment and terrain tiles</li>
-                      <li>Interactive objects and elements</li>
-                      <li>Treasure and reward visuals</li>
-                      <li>Additional character animations</li>
+                      <li>Secure randomness generation</li>
+                      <li>Smart contract for Double or Nothing</li>
+                      <li>EXP pool management</li>
+                      <li>Anti-cheat protections</li>
+                      <li>Transaction optimization</li>
                     </ul>
                   </div>
                 </motion.div>

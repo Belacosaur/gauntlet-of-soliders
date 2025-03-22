@@ -154,7 +154,7 @@ const WhitepaperPage = () => {
                         <li>Development Options:
                           <ul className="ml-5 mt-2 space-y-1">
                             <li>Base Package: <span className="text-amber-400 font-bold">$20,000</span> (Limited art, core functions)</li>
-                            <li>Extended Package: <span className="text-amber-400 font-bold">$28,000</span> (Animated sprites, explorer mini-game)</li>
+                            <li>Extended Package: <span className="text-amber-400 font-bold">$28,000</span> (Animated sprites, Double or Nothing gambling)</li>
                           </ul>
                         </li>
                         <li>Player Engagement: <span className="text-green-400 font-bold">Daily tournaments & battles</span></li>

@@ -32,7 +32,7 @@ const Overview: React.FC = () => {
               </p>
               <ul className="ml-5 space-y-2">
                 <li>• Base Package: <span className="text-amber-400">$20,000</span> (Limited art, core functions)</li>
-                <li>• Extended Package: <span className="text-amber-400">$28,000</span> (Animated sprites, mini-game)</li>
+                <li>• Extended Package: <span className="text-amber-400">$28,000</span> (Animated sprites, Double or Nothing gambling)</li>
                 <li>• Marketing Package: <span className="text-amber-400">$10,000</span> (Optional)</li>
               </ul>
               <p>

@@ -14,7 +14,7 @@ We offer two development packages:
 
 2. **Extended Package: $28,000**
    - Animated character sprites
-   - Explorer mini-game
+   - Double or Nothing gambling feature
    - Enhanced visual effects
    - Additional gameplay features
    - All features from the base package
@@ -55,18 +55,17 @@ The extended package includes all elements from the base package, plus:
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Animated Sprites | Animation frames for all character classes | $2,500 |
-| Visual Effects | Enhanced battle and UI animations | $1,500 |
+| Animated Sprites | Full animation sets for all character classes | $2,500 |
+| Visual Effects | Polish, transitions, and feedback animations | $1,500 |
 | **Subtotal** | | **$4,000** |
 
-### 2. Explorer Mini-Game ($4,000)
+### 2. Double or Nothing Gambling Feature ($4,000)
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Mini-Game Development | Exploration gameplay mechanics | $2,500 |
-| Mini-Game Assets | Environment and interaction elements | $1,000 |
-| Integration | Connecting with main game systems | $500 |
-| **Subtotal** | | **$4,000** |
+| Gambling System Development | Post-battle gambling mechanics and UI | $2,500 |
+| Visual & Audio Assets | Animation effects and sound design | $1,000 |
+| Smart Contract Integration | Secure randomness generation and EXP management | $500 |
 
 ## Development Efficiency Factors
 
