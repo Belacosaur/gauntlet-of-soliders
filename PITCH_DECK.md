@@ -2,152 +2,148 @@
 
 ## Executive Summary
 
-**Gauntlet of SOLiders** is a medieval fantasy NFT duel game built on the Solana blockchain. Players collect unique warrior NFTs and compete in strategic battles using a Rock/Paper/Scissors-based combat system with positioning elements. The game features tournaments with prize pools, a token economy with $EXP rewards, and pixel art visuals.
+Gauntlet of SOLiders is a medieval fantasy NFT battle game built on the Solana blockchain, featuring strategic Rock/Paper/Scissors gameplay with a unique positioning system. The game leverages Solana's speed and low transaction costs to create a seamless gaming experience with genuine player skill and collectible NFT warriors.
 
 **Key Highlights:**
-- Development Timeline: **30-60 days**
-- Development Budget: **$20,000**
-- Revenue Potential: **$400K-$800K** in first year
-- NFT Collection: **8,192 unique warriors** across 8 classes
-- ROI Potential: **20-40x** on initial investment
+- **Development Timeline:** 30-60 days from start to finish
+- **Development Budget:** $20,000 total investment
+- **Unique Selling Points:** Strategic RPS gameplay, 8,192 NFT collection, tournament prize pools
+- **Blockchain:** Solana (low fees, high throughput, eco-friendly)
+- **Target Audience:** Crypto enthusiasts, casual gamers, competitive players
 
-## The Problem
+## Problem Statement
 
-Traditional blockchain games face significant challenges:
-- High transaction fees on Ethereum making gameplay expensive
-- Slow transaction finality disrupting real-time gameplay
-- Complex mechanics creating barriers to entry
-- Excessive focus on speculation over enjoyable gameplay
-- Lack of strategic depth in current NFT battle games
+Current blockchain games suffer from several limitations:
+1. **High transaction costs** on most chains make frequent gameplay prohibitively expensive
+2. **Slow confirmation times** create friction in real-time gaming experiences
+3. **Limited strategic depth** in many NFT games reduces long-term engagement
+4. **Complex onboarding** creates barriers for mainstream gamers
+5. **Poor tokenomics** lead to economic collapse in many play-to-earn games
 
-## Our Solution
+## Solution: Gauntlet of SOLiders
 
-Gauntlet of SOLiders addresses these challenges with:
-- **Solana Blockchain**: Sub-second transaction finality with minimal fees
-- **Accessible Combat System**: Easy-to-understand Rock/Paper/Scissors core with strategic depth
-- **NFT Ownership**: True ownership of unique warrior characters
-- **Tournament Structure**: Regular competitions with prize pools
-- **Token Economy**: $EXP rewards for participation and victories
-- **Pixel Art Aesthetic**: Nostalgic yet modern visual style
+Our game addresses these challenges through:
+1. **Solana Blockchain:** Sub-cent transaction fees and near-instant confirmations
+2. **Accessible Mechanics:** Easy-to-learn Rock/Paper/Scissors foundation with strategic depth
+3. **Collectible Warriors:** 8,192 unique NFT characters across 8 distinct classes
+4. **Tournament System:** Competitive gameplay with skill-based rewards
+5. **Simple Onboarding:** Streamlined wallet integration and intuitive gameplay
 
 ## Game Mechanics
 
-The battle system features:
-- **3x3 Grid Arena**: Strategic positioning elements
-- **Class-Based System**: 8 distinct warrior classes with unique attributes
-- **Rock/Paper/Scissors Combat**: Enhanced with position-based modifiers
-- **Equipment Upgrades**: NFT warriors can be enhanced with gear
-- **Tournament Brackets**: Weekly and monthly competitions
+### Core Gameplay
+- **Strategic RPS:** Enhanced Rock/Paper/Scissors with positioning elements
+- **3x3 Grid:** Tactical battlefield allowing for strategic positioning
+- **Character Classes:** 8 unique warrior classes with different abilities
+- **Special Moves:** Class-specific abilities that unlock strategic options
+- **Tournament Ladder:** Competitive rankings and prize pools
+
+### NFT Collection
+- **Collection Size:** 8,192 unique warriors
+- **Character Classes:** Knight, Archer, Wizard, Assassin, Paladin, Berserker, Alchemist, Necromancer
+- **Rarity Tiers:** Common, Uncommon, Rare, Legendary
+- **Visual Style:** Distinctive pixel art aesthetic
+- **Utility:** Each NFT serves as a playable character with unique attributes
+
+## Technology Stack
+
+### Blockchain Implementation
+- **Platform:** Solana
+- **Transaction Speed:** 65,000+ TPS
+- **Transaction Cost:** <$0.01 per transaction
+- **NFT Standard:** Solana NFT standard with Magic Eden integration
+- **Smart Contracts:** Custom battle system and tournament management
+- **Wallet Integration:** Support for Phantom, Solflare, and other Solana wallets
+
+### Front-End Development
+- **Framework:** Next.js with TypeScript
+- **Styling:** Tailwind CSS for responsive design
+- **Animation:** Framer Motion for fluid interactions
+- **Deployment:** Vercel for global CDN distribution
+- **Responsive Design:** Mobile and desktop optimized
 
 ## Market Opportunity
 
-The blockchain gaming market presents significant opportunity:
-- Blockchain gaming market projected to reach **$65.7 billion by 2027**
-- NFT gaming segment growing at **70% CAGR**
-- Solana ecosystem expanding rapidly with **improved infrastructure**
-- Target audience of **10M+ gamers** interested in blockchain games
-- Untapped demand for **accessible yet strategic** NFT games
+### Target Audience
+- **Primary:** Crypto enthusiasts and NFT collectors (42M+ globally)
+- **Secondary:** Casual mobile gamers looking for strategic gameplay (2.8B+ globally)
+- **Tertiary:** Competitive gamers interested in tournaments with prizes
 
-## Target Audience
+### Market Size
+- **Global NFT Gaming Market:** $4.6B in 2022, projected to reach $22B by 2025
+- **Solana NFT Market:** $1.1B in trading volume, with 10M+ active wallets
+- **Strategic Mobile Games:** $5.4B market segment, growing 18% annually
 
-1. **Crypto Enthusiasts**: Blockchain-savvy users seeking new gaming experiences
-2. **Strategic Gamers**: Players who enjoy turn-based strategy games
-3. **Collectors**: NFT collectors interested in gaming utility
-4. **Competitive Players**: Gamers attracted to tournament structures
-5. **Pixel Art Fans**: Nostalgic gamers who appreciate retro aesthetics
+## Business Model
 
-## Technology
+### Revenue Streams
+1. **Primary NFT Sales:** Initial minting of 8,192 warrior NFTs
+2. **Marketplace Royalties:** Percentage from secondary market trades via Magic Eden
+3. **Tournament Entry Fees:** Optional paid tournaments with prize pools
+4. **Battle Passes:** Seasonal content and rewards for dedicated players
 
-Our technology stack includes:
-- **Blockchain**: Solana (speed, low fees, scalability)
-- **NFT Standard**: Metaplex
-- **Smart Contracts**: Rust/Anchor Framework
-- **Frontend**: React/Next.js, WebGL
-- **Backend**: Node.js, Rust services
-- **Art Creation**: Pixel art tools, WebGL animations
-
-## Competitive Advantage
-
-Gauntlet of SOLiders distinguishes itself through:
-- **Expert Team**: Blockchain and gaming veterans capable of rapid development
-- **Speed to Market**: 30-60 day development timeline vs. competitors' 6-12 months
-- **Cost Efficiency**: $20,000 budget through optimization and experience
-- **Strategic Depth**: Unique positioning mechanics within accessible framework
-- **Solana Integration**: Superior blockchain performance for gaming applications
-- **Tournament Focus**: Built-in competitive structure for sustained engagement
-
-## Revenue Model
-
-Multiple revenue streams:
-- **Initial NFT Sales**: $150K-$300K from 8,192 NFTs
-- **Marketplace Fees**: 5% fee on secondary market transactions
-- **Tournament Entry Fees**: 10-20% of prize pools retained
-- **$EXP Token Economy**: Strategic token release schedule
-- **Partnerships & Sponsorships**: Tournament sponsorships
-
-## Go-to-Market Strategy
-
-Our rapid launch strategy includes:
-- **Community Building**: Discord and Twitter communities pre-launch
-- **Influencer Partnerships**: Gaming and crypto influencer collaborations
-- **Tournament Marketing**: Sponsored initial tournaments with attractive prize pools
-- **Content Creation**: Tutorial videos, strategy guides, and gameplay showcases
-- **Cross-Promotion**: Partnerships with existing Solana projects
+### Pricing Strategy
+- **NFT Mint Price:** 1 SOL per warrior
+- **Presale Discount:** 0.9 SOL for whitelist participants
+- **Tournament Entry:** Free-to-play and premium tournaments
 
 ## Development Roadmap
 
-| Phase | Timeline | Milestones |
-|-------|----------|------------|
-| Planning & Design | Days 1-10 | Project setup, art direction, technical architecture |
-| Core Development | Days 11-40 | Smart contracts, frontend, backend services |
-| Testing & Launch | Days 41-60 | QA, refinement, mainnet deployment |
-| Post-Launch | Ongoing | Tournaments, community building, feature expansion |
+### Phase 1: Core Development (30-60 Days)
+- Complete game development and smart contract implementation
+- NFT generation and metadata structuring
+- Front-end interface and wallet integration
+- Magic Eden marketplace integration
+- Initial tournament structure implementation
+
+### Phase 2: Launch & Growth (60-90 Days)
+- Public NFT mint on Magic Eden
+- First official tournaments
+- Community building initiatives
+- Partnerships with Solana gaming platforms
+- Game balance refinements based on data
+
+### Phase 3: Expansion (90+ Days)
+- Additional character classes and abilities
+- Enhanced tournament structures
+- Ecosystem partnerships and integrations
+- Mobile-optimized experience
+- Guild/clan systems for team play
 
 ## Investment Opportunity
 
-- **Total Budget**: $20,000
-- **Accelerated Timeline**: 30-60 days to market
-- **Expected ROI**: 20-40x within 12 months
-- **Scalability**: Infrastructure designed for user growth
-- **Low Overhead**: Efficient team and development approach
+### Capital Requirements
+- **Total Budget:** $20,000
+- **Development:** $15,000 (75%)
+- **Marketing:** $3,000 (15%)
+- **Operations:** $2,000 (10%)
+
+### USPs for Investors
+1. **Rapid Development:** Complete product in just 30-60 days
+2. **Experienced Team:** Track record in blockchain gaming and NFTs
+3. **Low Initial Investment:** Capital-efficient development approach
+4. **Scalable Model:** Foundation for ongoing revenue streams
+5. **Market Timing:** Positioned for Solana gaming ecosystem growth
 
 ## Team
 
-Our elite team combines expertise in:
-- Blockchain development with Solana experience
-- Game design specializing in competitive mechanics
-- Smart contract security and auditing
-- Frontend development with Web3 integration
-- Pixel art creation and animation
-- Community management and player engagement
+Our elite development team brings extensive experience in blockchain, gaming, and NFTs:
+- **Blockchain Developers:** Solana smart contract specialists
+- **Game Designers:** Experts in balancing and competitive mechanics
+- **Pixel Artists:** Professional game artists with distinctive style
+- **Frontend Developers:** Web3 integration specialists
+- **Marketing:** NFT launch strategists
 
-## Why Now?
+## Call to Action
 
-The market is perfectly positioned for Gauntlet of SOLiders:
-- Solana ecosystem maturation providing stable infrastructure
-- Growing disillusionment with high-cost Ethereum games
-- Increasing demand for strategic rather than speculative gameplay
-- Emerging tournament culture in blockchain gaming
-- Pixel art renaissance in gaming aesthetics
+Join us in bringing Gauntlet of SOLiders to the Solana gaming ecosystem:
+1. **Investment:** Secure early participation in this innovative project
+2. **Collaboration:** Explore partnership opportunities
+3. **Playtest:** Participate in upcoming beta testing
+4. **Spread the Word:** Help us build community awareness
 
-## Investment Requirements
-
-- **Development Budget**: $20,000
-- **Timeline**: 30-60 days
-- **Use of Funds**:
-  - Smart Contract Development: $10,500
-  - Frontend & Backend Development: $7,500
-  - Design & Testing: $2,000
-
-## Contact Information
-
-For more information or to discuss partnership opportunities:
-
-- **Website**: [gauntletofsoliders.com](https://gauntletofsoliders.com)
-- **Email**: info@gauntletofsoliders.com
-- **Twitter**: @GauntletSOL
-- **Discord**: [discord.gg/gauntletofsoliders](https://discord.gg/gauntletofsoliders)
+**Contact: team@gauntletofsoliders.io**
 
 ---
 
-*Gauntlet of SOLiders - Strategic Medieval Duels on Solana* 
+*This document provides an overview of the Gauntlet of SOLiders project. Detailed technical specifications, comprehensive financial projections, and legal considerations are available in separate documents.* 

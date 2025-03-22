@@ -51,12 +51,14 @@
 - Procedurally generated with distinct traits
 - Utility-focused NFTs that affect gameplay
 - Seasonal releases for long-term engagement
+- Magic Eden marketplace integration
 
 ### Smart Contracts
 - Secure and efficient Solana-based design
 - Transparent and fair battle mechanics
 - Built-in anti-cheat protection
 - Seamless wallet integration
+- Magic Eden NFT standard compliance
 
 ### Artwork
 - Distinctive pixel art style
@@ -77,6 +79,15 @@ Gauntlet of SOLiders combines the strategic depth of competitive games with the 
 
 By leveraging our experienced team and efficient production methods, we're able to create a complete game experience at a fraction of the typical cost and time, resulting in a product that's positioned for rapid market success.
 
+## Technology Stack
+
+- **Blockchain**: Solana (5,000+ TPS, sub-cent fees)
+- **NFT Standard**: Magic Eden integration
+- **Frontend**: Next.js, React, TailwindCSS
+- **Backend**: Node.js, Express
+- **Database**: PostgreSQL, Redis
+- **Authentication**: Phantom/Solflare wallet integration
+
 ## Next Steps
 
 1. Review the detailed documents in this repository
@@ -85,7 +96,3 @@ By leveraging our experienced team and efficient production methods, we're able 
 4. Prepare for launch in 60 days
 
 ---
-
-**Contact:** team@gauntletofsoliders.io
-
-*For detailed technical information, please refer to the documentation files in this repository.*

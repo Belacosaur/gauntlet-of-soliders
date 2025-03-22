@@ -143,7 +143,7 @@ enum WarriorClass {
 ```
 
 **Technical Considerations**:
-- Metaplex integration for NFT standards
+- Magic Eden integration for NFT marketplace
 - Randomness for class assignment
 - Secure metadata storage
 - Gas optimization for bulk minting
@@ -567,7 +567,7 @@ The development is structured in phases:
 - **Blockchain**:
   - Solana Mainnet
   - RPC node providers (e.g., Quicknode, Alchemy)
-  - Metaplex for NFT standards
+  - Magic Eden for NFT trading and minting
 
 - **Hosting**:
   - Frontend: Vercel/Netlify
@@ -715,4 +715,23 @@ As user base grows, scaling becomes important:
 
 This architecture document provides a comprehensive technical blueprint for the development of Gauntlet of SOLiders. It covers all aspects of the system from smart contracts to frontend design, ensuring a cohesive development approach.
 
-The implementation should follow this architecture while allowing for adjustments based on technical discoveries during development. Regular reviews of this document should be conducted to keep it aligned with the evolving project requirements. 
+The implementation should follow this architecture while allowing for adjustments based on technical discoveries during development. Regular reviews of this document should be conducted to keep it aligned with the evolving project requirements.
+
+### NFT Architecture
+
+#### Smart Contract Integration
+
+- Solana Token Program for NFT implementation
+- Magic Eden marketplace integration for minting and trading
+- NFT metadata stored on Arweave for permanence
+- Token-controlled access to game features
+- Asset validation for gameplay mechanics
+
+### Third-Party Integrations
+
+#### Blockchain Ecosystem
+
+- Solana RPC providers for network access
+- Magic Eden for NFT marketplace integration
+- Phantom/Solflare wallet integration
+- Arweave for decentralized storage 

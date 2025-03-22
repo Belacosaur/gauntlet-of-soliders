@@ -41,7 +41,7 @@ Our exceptional development speed and cost-effectiveness are achieved through:
 ### 1. Expert Team Composition
 
 - Senior Solana developers with 4+ years of experience
-- Frontend specialists with extensive Web3 gaming background
+- Frontend specialists with extensive Web3 development
 - Full-stack developers proficient in both blockchain and application layers
 - Pixel artists with rapid iteration capabilities
 
@@ -71,9 +71,9 @@ Our exceptional development speed and cost-effectiveness are achieved through:
 
 ### Revenue Allocation
 
-- 70% to prize pool (5,734 SOL)
-- 25% to team/development/art (2,048 SOL)
-- 5% to reserve for future seasons (410 SOL)
+- 70% to prize pool (5,000 SOL)
+- 25% to team/development/art (2,700 SOL)
+- 5% to reserve for future seasons (492 SOL)
 
 At current SOL valuation, the project offers extraordinary ROI potential with development costs being a small fraction of projected revenue.
 

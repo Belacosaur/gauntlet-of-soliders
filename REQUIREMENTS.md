@@ -6,23 +6,20 @@ This document outlines the comprehensive technical requirements for the developm
 
 ## 1. Blockchain Requirements
 
-### 1.1 Solana Blockchain Integration
+### 1.1 Blockchain Platform Selection
 
-- **Requirement 1.1.1:** Implement integration with Solana Blockchain using current mainnet version
-- **Requirement 1.1.2:** Support RPC connections to major providers (Quicknode, Alchemy, etc.)
-- **Requirement 1.1.3:** Implement proper transaction handling with retry mechanisms for network failures
-- **Requirement 1.1.4:** Support Solana Program Derived Addresses (PDAs) for data storage
-- **Requirement 1.1.5:** Implement proper error handling for all blockchain operations
+- **Requirement 1.1.1:** Implement the game on the Solana blockchain for high throughput and low transaction costs
+- **Requirement 1.1.2:** Ensure compatibility with Solana's latest network version and features
+- **Requirement 1.1.3:** Support integration with popular Solana wallets (Phantom, Solflare, etc.)
 
-### 1.2 Smart Contracts (Solana Programs)
+### 1.2 Smart Contract Development
 
-- **Requirement 1.2.1:** Develop NFT minting program using Metaplex standards
-- **Requirement 1.2.2:** Develop staking program for NFT staking and $EXP earning
-- **Requirement 1.2.3:** Develop duel program with Rock/Paper/Scissors combo mechanics
-- **Requirement 1.2.4:** Develop $EXP token program compliant with SPL Token standard
-- **Requirement 1.2.5:** Develop prize pool program with secure distribution capabilities
-- **Requirement 1.2.6:** All programs must support program upgrades for future improvements
-- **Requirement 1.2.7:** All programs must include comprehensive testing suites
+- **Requirement 1.2.1:** Develop NFT integration for Solana NFT standards and Magic Eden marketplace
+- **Requirement 1.2.2:** Create battle system smart contract with Rock/Paper/Scissors mechanics
+- **Requirement 1.2.3:** Implement tournament management and prize distribution contracts
+- **Requirement 1.2.4:** Ensure all contracts pass security audits from reputable firms
+- **Requirement 1.2.5:** Design gas-efficient contract logic for minimal transaction costs
+- **Requirement 1.2.6:** Implement appropriate access controls and admin functions
 
 ### 1.3 Security Requirements
 
@@ -34,26 +31,29 @@ This document outlines the comprehensive technical requirements for the developm
 
 ## 2. NFT Requirements
 
-### 2.1 NFT Standards and Metadata
+### 2.1 NFT Standards and Implementation
 
-- **Requirement 2.1.1:** Create 8,192 unique NFTs following Metaplex NFT standards
-- **Requirement 2.1.2:** Implement metadata structure supporting the following attributes:
-  - Warrior class (Knight, Monk, Lord, Cleric, Magician, Witch, Thief, Bard)
-  - Level (1-13)
-  - Experience multiplier
-  - Win count
-  - Total battles
-  - Active status
-- **Requirement 2.1.3:** Support metadata updates for level progression
-- **Requirement 2.1.4:** Implement NFT burning mechanism for defeated warriors
+- **Requirement 2.1.1:** Create 8,192 unique NFTs following Solana NFT standards
+- **Requirement 2.1.2:** Support integration with Magic Eden marketplace for minting and trading
+- **Requirement 2.1.3:** Structure NFT metadata to include both visual traits and gameplay attributes
+- **Requirement 2.1.4:** Implement secure on-chain verification of NFT ownership
+- **Requirement 2.1.5:** Store visual assets on decentralized storage (Arweave/IPFS)
 
-### 2.2 NFT Distribution and Minting
+### 2.2 NFT Trait System
 
-- **Requirement 2.2.1:** Support minting at 1 SOL per NFT (0.9 SOL for presale)
-- **Requirement 2.2.2:** Random class assignment during minting
-- **Requirement 2.2.3:** Ensure equal distribution of classes (1,024 NFTs per class)
-- **Requirement 2.2.4:** Support bulk minting for efficiency
-- **Requirement 2.2.5:** Implement mint cap to prevent exceeding 8,192 NFTs
+- **Requirement 2.2.1:** Implement 8 character classes with distinct base statistics
+- **Requirement 2.2.2:** Create trait variation system with multiple weapons, armor, and helmets
+- **Requirement 2.2.3:** Design 4-tier rarity system (Common, Uncommon, Rare, Legendary)
+- **Requirement 2.2.4:** Ensure trait distribution maintains game balance
+- **Requirement 2.2.5:** Develop system to translate NFT traits into gameplay mechanics
+
+### 2.3 NFT Distribution and Minting
+
+- **Requirement 2.3.1:** Support minting at 1 SOL per NFT (0.9 SOL for presale)
+- **Requirement 2.3.2:** Random class assignment during minting
+- **Requirement 2.3.3:** Ensure equal distribution of classes (1,024 NFTs per class)
+- **Requirement 2.3.4:** Support bulk minting for efficiency
+- **Requirement 2.3.5:** Implement mint cap to prevent exceeding 8,192 NFTs
 
 ## 3. Tokenomics Requirements
 

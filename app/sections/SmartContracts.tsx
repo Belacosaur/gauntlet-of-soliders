@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
-import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy, FaClock } from 'react-icons/fa';
+import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy, FaClock, FaMedal } from 'react-icons/fa';
 
 const SmartContracts: React.FC = () => {
   const contracts = [
@@ -11,7 +11,7 @@ const SmartContracts: React.FC = () => {
       id: 'nft-minting',
       icon: <FaCode className="text-purple-700" size={24} />,
       title: 'NFT Minting Contract',
-      description: 'Secure and efficient NFT minting contract for the 8,192 unique warriors across 8 character classes. Implements Metaplex standards with proper metadata handling and provenance verification.',
+      description: 'Secure and efficient NFT minting contract for the 8,192 unique warriors across 8 character classes. Implements Magic Eden standards with proper metadata handling and provenance verification.',
       features: [
         'Efficient mint process',
         'Metadata management',

@@ -189,7 +189,7 @@ const WhitepaperPage = () => {
                       <div>
                         <h4 className="text-lg font-['Press_Start_2P'] text-gray-300 mb-3">Gauntlet of SOLiders offers:</h4>
                         <ul className="space-y-2 list-disc pl-5 font-['VT323'] text-lg">
-                          <li><strong>Solana Blockchain:</strong> Sub-second transaction finality with minimal fees</li>
+                          <li><strong>Solana Blockchain:</strong> Unprecedented transaction speed (65,000+ TPS) enables real-time gameplay</li>
                           <li><strong>Accessible Combat System:</strong> Easy-to-understand Rock/Paper/Scissors core with strategic depth</li>
                           <li><strong>NFT Ownership:</strong> True ownership of unique warrior characters</li>
                           <li><strong>Tournament Structure:</strong> Regular competitions with prize pools</li>
@@ -413,22 +413,22 @@ const WhitepaperPage = () => {
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Why Solana?</h4>
                       <ul className="list-disc pl-5 space-y-2 mb-4">
-                        <li>Sub-second transaction finality enables real-time gameplay interactions</li>
-                        <li>Low transaction fees make frequent game actions economically viable</li>
-                        <li>High throughput capacity supports a large player base and tournament activity</li>
-                        <li>Robust NFT infrastructure through Metaplex provides reliable standards</li>
-                        <li>Energy-efficient Proof-of-Stake consensus aligns with sustainability goals</li>
+                        <li>Unprecedented transaction speed (65,000+ TPS) enables real-time gameplay</li>
+                        <li>Sub-cent transaction fees make frequent game actions economical</li>
+                        <li>Robust NFT infrastructure through Magic Eden provides reliable standards</li>
+                        <li>Energy-efficient Proof-of-Stake consensus aligns with environmental concerns</li>
                       </ul>
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">NFT Standard</h4>
-                      <p className="mb-4">
-                        We use Metaplex's Token Metadata standard on Solana, which provides:
+                      <p className="mt-4 font-['VT323'] text-xl">
+                        We use Solana's Token Metadata standard on Solana, which provides:
                       </p>
-                      <ul className="list-disc pl-5 space-y-2 mb-4">
-                        <li>Comprehensive metadata support for warrior attributes and properties</li>
-                        <li>Compatibility with major Solana marketplaces for seamless trading</li>
-                        <li>Efficient storage with on-chain minimal data and off-chain attribute storage</li>
-                        <li>Update authority capabilities for potential future enhancements</li>
+                      <ul className="space-y-2 list-disc pl-5 text-gray-300 font-['VT323'] text-lg">
+                        <li>Solana's proven Token Programs for blockchain functionality</li>
+                        <li>Magic Eden integration for NFT marketplace features</li>
+                        <li>Redis for high-performance caching and leaderboards</li>
+                        <li>PostgreSQL for persistent data storage</li>
+                        <li>WebSockets for real-time battle updates</li>
                       </ul>
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Smart Contract Security</h4>
@@ -479,7 +479,7 @@ enum WarriorClass {
                         Key technical considerations:
                       </p>
                       <ul className="list-disc pl-5 space-y-2">
-                        <li>Metaplex integration for NFT standards</li>
+                        <li>Magic Eden integration for NFT marketplace</li>
                         <li>Randomness for class assignment</li>
                         <li>Secure metadata storage</li>
                         <li>Gas optimization for bulk minting</li>
@@ -494,9 +494,9 @@ enum WarriorClass {
                           <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3 text-sm">Blockchain</h4>
                           <ul className="list-disc pl-5 space-y-1 mb-4">
                             <li>Solana</li>
-                            <li>Anchor Framework</li>
-                            <li>Metaplex</li>
-                            <li>Chainlink VRF</li>
+                            <li>Magic Eden</li>
+                            <li>Arweave</li>
+                            <li>Phantom/Solflare Wallet</li>
                           </ul>
                         </div>
                         
@@ -878,9 +878,12 @@ enum WarriorClass {
                         <div>
                           <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">Why did you choose Solana for Gauntlet of SOLiders?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
-                            Solana was selected for several key advantages: sub-second transaction finality, 
-                            low transaction fees, high throughput capacity, robust NFT infrastructure through 
-                            Metaplex, and energy-efficient Proof-of-Stake consensus.
+                            Gauntlet of SOLiders leverages Solana's industry-leading blockchain technology for 
+                            our NFT infrastructure. Our selection of Solana was driven by its exceptional 
+                            performance characteristics, supporting 65,000+ TPS with sub-second finality 
+                            and minimal transaction fees. This technology foundation ensures our gameplay remains 
+                            responsive and affordable while benefiting from integration with Magic Eden, 
+                            and energy-efficient Proof-of-Stake consensus.
                           </p>
                         </div>
                         

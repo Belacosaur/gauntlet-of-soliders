@@ -3,404 +3,282 @@
 ## Blockchain & Smart Contracts
 
 ### Q: Why did you choose Solana for Gauntlet of SOLiders?
-**A:** Solana was selected for several key technical advantages:
-- Sub-second transaction finality enables real-time gameplay interactions
-- Low transaction fees make frequent game actions economically viable
-- High throughput capacity supports a large player base and tournament activity
-- Robust NFT infrastructure through Metaplex provides reliable standards
-- Energy-efficient Proof-of-Stake consensus aligns with sustainability goals
 
-### Q: How do you handle on-chain vs. off-chain game logic?
-**A:** We implement a hybrid approach:
-- Critical ownership and value elements (NFTs, tokens, staking) are fully on-chain
-- Battle results and tournament outcomes are verified and recorded on-chain
-- Game state and matchmaking occur off-chain for performance optimization
-- Battle execution happens client-side with cryptographic verification
-- All critical randomness is generated using verifiable on-chain randomness
+**A:** Solana provides several critical advantages for our game:
+- **Speed & Cost**: Sub-second finality and transactions costing fractions of a cent
+- **Scalability**: Capable of handling 65,000+ TPS to support many concurrent battles
+- **Ecosystem**: Thriving gaming and NFT community with established marketplaces like Magic Eden
+- **Developer Tools**: Rich SDKs and libraries for rapid development
+- **NFT Standards**: Reliable Solana NFT standards with Magic Eden marketplace integration
+- **Energy Efficiency**: Environmentally-friendly Proof-of-Stake consensus mechanism
 
-### Q: What NFT standard are you using?
-**A:** We use Metaplex's Token Metadata standard on Solana, which provides:
-- Comprehensive metadata support for warrior attributes and properties
-- Compatibility with major Solana marketplaces for seamless trading
-- Efficient storage with on-chain minimal data and off-chain attribute storage
-- Update authority capabilities for potential future enhancements
-- Creator royalty mechanisms for sustainable project economics
+### Q: How do you ensure NFT ownership and proper integration with the game?
+
+**A:** We use Solana's Token Metadata standard for our NFTs, which provides:
+- Verifiable on-chain ownership
+- Permanent storage of asset metadata
+- Attribute verification for gameplay mechanics
+- Seamless integration with popular Solana wallets
+- Compatibility with Magic Eden and other Solana marketplaces
+
+Each NFT contains both visual traits and gameplay attributes that are read directly from the blockchain during battles.
+
+### Q: What smart contracts power the game, and how are they architected?
+
+**A:** Our game uses three primary smart contract modules:
+1. **NFT Integration**: Allows verification and reading of NFT attributes
+2. **Battle System**: Handles game mechanics, move verification, and outcome determination 
+3. **Tournament/Treasury**: Manages entry fees, prizes, and reward distribution
+
+The architecture follows a modular design pattern that separates concerns while allowing secure interaction between components. This provides:
+- Easier auditability
+- Targeted upgradeability
+- Clear security boundaries
+- Efficient gas consumption
 
 ### Q: How do you ensure smart contract security?
-**A:** Our multilayered security approach includes:
-- Multiple independent security audits from reputable firms
-- Formal verification for critical smart contract components
-- Comprehensive testing with both unit and integration test coverage
-- Bug bounty program to incentivize responsible disclosure
-- Emergency pause functionality for critical vulnerabilities
-- Progressive deployment starting with devnet and testnet phases
 
-### Q: Can the smart contracts be upgraded if needed?
-**A:** Yes, we implement upgradability with strict governance:
-- Program upgradability is managed through Solana's upgradable BPF loader
-- Multisig approval process required for any program modifications
-- Transparent upgrade process with community notification
-- Upgradability has defined limits to protect user assets
-- Complete technical and user documentation for any changes
+**A:** We implement multiple layers of security:
+1. **Formal Verification**: Mathematical proof of critical contract functions
+2. **Multiple Audits**: Third-party code reviews by respected security firms
+3. **Timelocks**: Delay periods for sensitive admin functions
+4. **Bug Bounty**: Public incentives for responsible disclosure
+5. **Progressive Rollout**: Phased deployment starting with lower-stakes functionality
 
-## Game Mechanics & Technical Implementation
+Additionally, our battle system uses a commit-reveal pattern to prevent move sniping and front-running attacks.
 
-### Q: How does the battle system work technically?
-**A:** The battle system combines on-chain and off-chain components:
-- Players submit sealed moves using a commit-reveal scheme
-- Move validity is verified cryptographically
-- Battle execution follows deterministic rules processed client-side
-- Results are verified and recorded on-chain
-- A 3x3 grid system with positioning strategy is implemented via state machine
-- Enhanced Rock/Paper/Scissors mechanics include special abilities that modify the traditional outcome hierarchy
+### Q: How decentralized is the game?
+
+**A:** The game employs a hybrid approach:
+- **On-Chain**: NFT ownership, game rules, battle outcomes, tournament results, and rewards
+- **Off-Chain**: Game client, matchmaking, UI rendering, and non-critical data storage
+
+This hybrid design optimizes for both decentralization of critical components and practical gameplay performance. Players maintain full ownership of their NFTs and earned rewards regardless of the game service availability.
+
+## Game Mechanics
+
+### Q: How does the battle system work?
+
+**A:** The game features a strategic Rock/Paper/Scissors system with added depth:
+1. **3x3 Grid**: Each player controls their side of a battlefield grid
+2. **Positioning**: Character placement affects attack and defense capabilities
+3. **Class Abilities**: Each character class has unique special abilities
+4. **Move Selection**: Players choose Rock/Paper/Scissors plus grid position
+5. **Result Calculation**: Outcomes consider move type, position, and character stats
+6. **Damage Application**: HP reduction based on move outcome and character stats
+7. **Battle Resolution**: First player to reduce opponent's HP to zero wins
+
+The system creates a perfect balance between skill-based strategy and accessible gameplay mechanics.
+
+### Q: How do NFT traits affect gameplay?
+
+**A:** Each NFT has several traits that directly impact gameplay:
+- **Class**: Determines base stats and special abilities
+- **Weapon**: Affects attack type and special effects
+- **Armor**: Provides defense bonuses against specific attack types
+- **Helmet**: Modifies special ability parameters
+- **Rarity**: Provides overall stat multipliers
+- **Special Effects**: Grants unique conditional bonuses
+
+These traits create thousands of strategic combinations without making rare NFTs insurmountably powerful. Even common NFTs can defeat legendary ones with the right strategy and moves.
 
 ### Q: How do you prevent cheating in battles?
-**A:** Multiple anti-cheating mechanisms are implemented:
-- Commit-reveal pattern prevents players from seeing opponent's moves before committing
-- Server-side verification of all battle actions and outcomes
-- Deterministic battle resolution that can be independently verified
-- Cryptographic signatures required for all player actions
-- Rate limiting to prevent exploitation of potential timing attacks
-- Automated flagging of suspicious patterns for review
 
-### Q: How does the tournament system scale?
-**A:** Our tournament architecture employs several scaling strategies:
-- Sharded architecture distributes tournament load across multiple servers
-- Asynchronous match execution allows for non-linear tournament progression
-- Bracket generation and management uses efficient tree-based algorithms
-- Results are batched for on-chain confirmation to reduce transaction load
-- Horizontally scalable infrastructure automatically adjusts to participation levels
-- Tiered tournament structure distributes player load across multiple concurrent events
+**A:** Our anti-cheat system has multiple components:
+1. **Commit-Reveal Pattern**: Players submit encrypted moves that are revealed only after both players have committed
+2. **Server Validation**: A validator node confirms move legality and outcome calculation
+3. **Smart Contract Verification**: On-chain verification of battle results
+4. **Replay Protection**: Prevention of move resubmission or reuse
+5. **Timeout Handling**: Fair resolution of abandoned matches
+6. **Deterministic Outcomes**: No RNG-based results that could be manipulated
 
-### Q: How do you generate randomness for gameplay elements?
-**A:** We utilize a hybrid randomness approach:
-- Chainlink VRF (Verifiable Random Function) provides verifiable on-chain randomness for critical elements
-- Client-side pseudo-random generation for non-economic visual effects
-- Cryptographic commit-reveal schemes for player interactions requiring hidden information
-- Entropy pooling from multiple blockchain sources for additional unpredictability
-- Transparent randomness verification tools available to players
+These measures ensure fair play while maintaining the competitive integrity of tournaments.
 
-### Q: What is the technical architecture of the game client?
-**A:** Our game client architecture consists of:
-- React/Next.js frontend with TypeScript for type safety
-- Custom WebGL renderer for battle animations and effects
-- Redux for state management with middleware for blockchain interactions
-- Responsive design for cross-device compatibility
-- PWA capabilities for mobile-optimized experience
-- WebSocket connections for real-time game state updates
-- Integration with Solana wallet adapters for transaction signing
+### Q: How are tournaments structured?
 
-## Infrastructure & Scalability
+**A:** Tournaments follow a flexible structure:
+- **Entry**: Open or invite-only with optional entry fees
+- **Format**: Single elimination, double elimination, or round-robin
+- **Matchmaking**: Skill-based or random pairing
+- **Rewards**: SOL prizes distributed automatically via smart contract
+- **Seasons**: Regular tournament seasons with cumulative rankings
+- **Special Events**: Themed tournaments with unique rules and prizes
 
-### Q: How does your backend infrastructure handle player load?
-**A:** Our scalable backend employs:
-- Kubernetes-orchestrated microservices architecture
-- Autoscaling container deployments based on demand
-- Regional deployment for reduced latency across geographies
-- Load balancing across multiple availability zones
-- Database sharding for horizontal scaling of player data
-- Caching layers to reduce blockchain query load
-- Queue-based processing for asynchronous operations
+All tournament results and prize distributions are recorded on-chain for complete transparency.
 
-### Q: How do you handle chain congestion or outages?
-**A:** We implement several resilience strategies:
-- Transaction retry mechanisms with exponential backoff
-- State channel architecture for critical gameplay during chain congestion
-- Local state maintenance with deferred on-chain reconciliation
-- Priority fee adjustment algorithm for transaction inclusion
-- Graceful degradation modes that maintain core gameplay
-- Clear user communication protocols for blockchain issues
-- Multiple RPC endpoint providers with automatic failover
+## Infrastructure
 
-### Q: What measures ensure data availability and integrity?
-**A:** Our data integrity approach includes:
-- On-chain storage of all ownership and value-related data
-- Cryptographic verification of game state transitions
-- Distributed storage of game metadata using IPFS
-- Database replication across multiple regions
-- Regular backup procedures with point-in-time recovery
-- Immutable audit logs of all system actions
-- Redundant storage of critical user information
+### Q: What is the technical stack for the game?
 
-### Q: How do you optimize for blockchain storage costs?
-**A:** Several optimization techniques are employed:
-- Minimizing on-chain data with off-chain metadata linked via hashes
-- Batch processing of similar transactions
-- Compression of data before on-chain storage
-- Efficient encoding of game state changes
-- Strategic use of Solana account models to reduce rent costs
-- Cleanup mechanisms for obsolete on-chain data
-- Cost modeling to balance storage needs with economic efficiency
+**A:** Our technical stack includes:
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, WebSockets for real-time battles
+- **Blockchain**: Solana for smart contracts and NFTs
+- **NFT Storage**: Arweave for permanent asset storage
+- **Authentication**: Web3 wallet-based authentication
+- **Databases**: PostgreSQL for user data, Redis for caching
+- **Infrastructure**: AWS for scalable cloud hosting
+- **CDN**: Cloudflare for global content delivery
+- **Monitoring**: Datadog and Sentry for observability
 
-### Q: What technical monitoring systems are in place?
-**A:** Our comprehensive monitoring includes:
-- Real-time performance dashboards for all system components
-- Automated alerting for anomalous patterns or outages
-- Transaction confirmation tracking and verification
-- User experience metrics including response times
-- Smart contract interaction success rates
-- Security monitoring for unusual access patterns
-- Custom blockchain indexers for game-specific metrics
+This stack provides performance, scalability, and reliability while enabling rapid development.
 
-## Tokenomics & Economy
+### Q: How does the game handle high user loads?
 
-### Q: How is the $EXP token technically implemented?
-**A:** The $EXP token implementation includes:
-- SPL Token standard on Solana for maximum compatibility
-- Fixed supply model with no mint authority after initial creation
-- Automated distribution via on-chain staking contracts
-- Token minting controls with multisig governance
-- Integration with major Solana wallets and interfaces
-- Comprehensive transaction monitoring for economic analysis
+**A:** We've designed for scalability from the ground up:
+- **Horizontal Scaling**: Adding servers dynamically based on demand
+- **Load Balancing**: Distributing traffic across multiple instances
+- **Database Sharding**: Partitioning data to manage growth
+- **Caching Layers**: Reducing database load for frequent queries
+- **Rate Limiting**: Protecting APIs from abuse
+- **Graceful Degradation**: Prioritizing core functions during peak loads
 
-### Q: How are staking rewards technically distributed?
-**A:** Our staking distribution mechanism:
-- Uses on-chain time-locked staking contracts
-- Calculates rewards based on verifiable on-chain time
-- Distributes rewards using batched transactions for gas efficiency
-- Implements a fair distribution algorithm based on staking duration and NFT properties
-- Allows programmatic claiming with minimal user transaction costs
-- Includes comprehensive verification tools for reward accuracy
+Our architecture can scale to hundreds of thousands of concurrent users while maintaining responsive gameplay.
 
-### Q: How are tournament prize pools technically managed?
-**A:** Prize pool management employs:
-- Escrow smart contracts that hold and distribute tournament funds
-- Automated distribution based on verifiable tournament outcomes
-- Multi-signature controls for tournament creation and configuration
-- Transparent on-chain accounting of all prize pool transactions
-- Fallback distribution mechanisms for edge cases
-- Tiered release schedules for major tournament prizes
+### Q: What about network issues during battles?
 
-### Q: How do you prevent economic exploits?
-**A:** Our economic security measures include:
-- Rate limiting on reward-generating activities
-- Sybil resistance through NFT ownership requirements
-- Formal verification of economic-critical smart contracts
-- Continuous monitoring systems for unusual economic patterns
-- Circuit breakers for extreme market conditions
-- Economic simulation testing before deploying changes
-- Gradual rollout of economic changes to limit potential impact
+**A:** We've implemented several mechanisms to handle connectivity problems:
+- **State Synchronization**: Regular checkpoints of battle state
+- **Reconnection Logic**: Automatic resumption of battles after disconnection
+- **Timeout Handling**: Fair resolution if a player remains disconnected
+- **Move Buffering**: Allowing pre-loaded moves to execute during brief interruptions
+- **Bandwidth Optimization**: Minimal data transfer requirements
 
-### Q: How are secondary market royalties technically enforced?
-**A:** Royalty enforcement utilizes:
-- Metaplex's Creator Fee standard for on-chain royalty specification
-- Integration with Solana marketplaces that honor royalty standards
-- Monitoring tools to track marketplace compliance
-- Enhanced royalty enforcement through Metaplex's Programmable NFTs
-- Cross-marketplace analytics for royalty collection tracking
-- Alternative incentive mechanisms to encourage royalty payment
+These features ensure a smooth experience even on less reliable connections.
 
-## Development & Future Expansion
+## Tokenomics
 
-### Q: What is the technical stack for the development environment?
-**A:** Our development stack includes:
-- Anchor framework for Solana program development
-- Rust for smart contract development
-- TypeScript for frontend and backend services
-- React/Next.js for UI components
-- Node.js for backend services
-- PostgreSQL for relational data storage
-- Redis for caching and real-time features
-- Docker and Kubernetes for containerization and orchestration
-- GitHub Actions for CI/CD pipelines
+### Q: What are the revenue streams for the game?
 
-### Q: How is the development process structured?
-**A:** Our development methodology follows:
-- Agile development with two-week sprints
-- Feature branching with pull request reviews
-- Comprehensive automated testing requirements (>90% coverage)
-- Staging environments that mirror production
-- Devnet deployment for early testing
-- Mainnet-fork testing for economic simulations
-- Community beta testing phases for gameplay refinement
-- Documentation requirements for all new features
+**A:** The game has several revenue sources:
+1. **NFT Sales**: Primary sales of character NFTs through Magic Eden Launchpad
+2. **Marketplace Royalties**: Secondary sales percentage via Magic Eden's royalty system
+3. **Tournament Fees**: Entry fees for competitive tournaments
+4. **Season Passes**: Optional premium content and rewards
+5. **Sponsorships**: Partner integrations for special events
 
-### Q: How is the codebase structured for collaboration?
-**A:** Our codebase architecture supports collaboration through:
-- Monorepo structure with clear boundaries between components
-- Comprehensive API documentation using OpenAPI/Swagger
-- Shared libraries for common functionality
-- Style guides and linting for consistent code
-- Semantic versioning for all components
-- Comprehensive code comments and documentation
-- Modular design for parallel development streams
+This diverse approach ensures sustainable development while keeping core gameplay accessible.
 
-### Q: What are the technical plans for mobile support?
-**A:** Our mobile strategy includes:
-- Progressive Web App (PWA) approach for initial mobile access
-- React Native implementation for native app experience
-- Wallet adapter integration for mobile wallets
-- Optimized UI for touch interaction and smaller screens
-- Reduced network footprint for mobile data considerations
-- Push notification integration for tournament alerts
-- Mobile-specific performance optimizations
+### Q: How are tournament prize pools funded?
 
-### Q: How will you technically implement future game expansions?
-**A:** Future expansions are architected through:
-- Modular smart contract design allowing feature addition
-- Extensible metadata standards for new warrior attributes
-- API versioning to support backward compatibility
-- Feature flagging for gradual rollout of new capabilities
-- Data migration paths for existing users and assets
-- Sandbox environments for testing economic impacts
-- Community governance mechanisms for prioritization
+**A:** Prize pools come from multiple sources:
+- **Entry Fees**: A percentage of tournament entry fees
+- **Protocol Treasury**: Allocation from game revenue
+- **Sponsors**: External funding for featured tournaments
+- **Community Pool**: Optional community-contributed funds
 
-## Security & Compliance
+Smart contracts ensure transparent and automatic distribution of prizes to winners.
 
-### Q: How do you secure user assets?
-**A:** Our asset security approach includes:
-- Non-custodial design where users control their private keys
-- Comprehensive smart contract auditing
-- Limited approval patterns for token interactions
-- Clear transaction signing screens with action verification
-- Educational resources on wallet security
-- Regular security assessments and penetration testing
-- Emergency response procedures for security incidents
+## Development Process
 
-### Q: How do you handle private key security for project-controlled accounts?
-**A:** Our key management includes:
-- Hardware security modules for critical private keys
-- Multi-signature requirements for high-value operations
-- Role-based access control for administrative functions
-- Key rotation schedules and procedures
-- Cold storage for treasury assets
-- Comprehensive access logging and monitoring
-- Regular security reviews of key management practices
+### Q: How can you deliver the game in just 30-60 days?
 
-### Q: What measures prevent front-running or MEV exploitation?
-**A:** Our anti-front-running measures include:
-- Commit-reveal patterns for competitive actions
-- Batch processing of time-sensitive operations
-- Private mempool solutions for critical transactions
-- Time locks on value-generating activities
-- Transaction simulation to detect potential exploitation
-- Economic design that minimizes MEV opportunities
-- Monitoring for suspicious transaction patterns
+**A:** Our accelerated timeline is possible through:
+- **Expert Team**: Developers with extensive Solana and gaming experience
+- **Pre-built Components**: Leveraging existing libraries and frameworks
+- **Focused Scope**: Clearly defined MVP with core features
+- **Parallel Development**: Frontend, backend, and smart contract teams working simultaneously
+- **Efficient Tools**: Modern development environment and CI/CD pipeline
+- **Agile Methodology**: Daily iterations and continuous delivery
 
-### Q: How does the system handle regulatory compliance?
-**A:** Our compliance architecture includes:
-- Configurable geofencing based on IP and KYC data
-- Tiered KYC integration based on activity levels
-- On-chain compliance markers for regulated actions
-- Transaction monitoring for suspicious patterns
-- Reporting tools for regulatory requirements
-- Adaptable controls for evolving regulations
-- Documentation of compliance rationale and implementation
+Our approach delivers a high-quality core experience first, with additional features planned for post-launch updates.
 
-### Q: What disaster recovery procedures are in place?
-**A:** Our disaster recovery approach includes:
-- Regular state snapshots for critical systems
-- Multi-region data replication
-- Documented recovery procedures for various scenarios
-- Regular recovery testing and simulation
-- Alternative communication channels during outages
-- Clear user communication templates for incidents
-- Post-incident analysis and improvement processes
+### Q: What is your testing methodology?
 
-## Community & Governance
+**A:** We employ comprehensive testing at multiple levels:
+- **Unit Tests**: Individual function verification
+- **Integration Tests**: Component interaction testing
+- **Smart Contract Audits**: Security verification of on-chain code
+- **Load Testing**: Performance under high user volumes
+- **Playtest Sessions**: Real-world gameplay feedback
+- **Security Testing**: Penetration testing and vulnerability scanning
 
-### Q: How will community governance technically work?
-**A:** Our governance implementation includes:
-- On-chain voting using NFT ownership for validation
-- Proposal submission mechanisms with threshold requirements
-- Snapshot-based voting to reduce transaction costs
-- Tiered voting weight based on NFT holdings and tenure
-- Timelock controls for approved governance actions
-- Transparent execution of governance decisions
-- Vote delegation capabilities for passive participants
+All critical components have automated test coverage, with particular emphasis on smart contract security.
 
-### Q: What technical tools support community engagement?
-**A:** Our community toolkit includes:
-- Integrated Discord bot for wallet verification and role assignment
-- Tournament brackets and leaderboards with API access
-- Player profile system with achievement tracking
-- Social sharing tools for battle results and achievements
-- Community-specific API endpoints for fan projects
-- Webhook integration for community notifications
-- Developer documentation for community tool creation
+## Security
 
-### Q: How are game statistics and analytics made available?
-**A:** Our analytics infrastructure includes:
-- Public API for non-sensitive game statistics
-- Real-time leaderboards for active tournaments
-- Historical performance metrics for warriors and players
-- Aggregated economic data on token distribution and flows
-- Heat maps of battle strategies and outcomes
-- Custom querying tools for community analysts
-- Regular data exports for ecosystem researchers
+### Q: How do you secure user funds and NFTs?
 
-### Q: What mechanisms allow for user feedback on technical issues?
-**A:** Our feedback systems include:
-- In-game bug reporting tools with contextual data capture
-- Public issue tracker for transparency
-- Beta testing program with structured feedback channels
-- User experience monitoring with consent-based session recording
-- Community voting on feature priorities
-- Developer AMAs for technical discussion
-- Bounty programs for community-identified improvements
+**A:** Multiple security measures protect user assets:
+- **Non-Custodial Design**: Users always control their wallets and assets
+- **Secure Transaction Signing**: Clear transaction approval process
+- **Minimal Approval Scopes**: Limited permissions for game operations
+- **Formal Verification**: Mathematical proof of critical smart contracts
+- **Bug Bounty Program**: Incentives for responsible disclosure
 
-### Q: How do you balance decentralization with operational needs?
-**A:** Our balanced approach includes:
-- Clear documentation of centralized vs. decentralized components
-- Progressive decentralization roadmap with specific milestones
-- Transparent operation of necessary centralized services
-- Community oversight of centralized operations
-- Technical architecture that separates value storage (decentralized) from game services
-- Open-source components where security considerations allow
-- Documentation of security and performance tradeoffs
+The game never takes ownership of user NFTs or funds beyond explicitly approved tournament entry fees.
+
+### Q: What happens if there's a security incident?
+
+**A:** We have a comprehensive incident response plan:
+1. **Immediate Pause**: Ability to suspend affected features
+2. **User Communication**: Transparent and prompt notification
+3. **Investigation Team**: Rapid analysis of causes and impacts
+4. **Mitigation Measures**: Quick deployment of fixes
+5. **Post-Incident Analysis**: Thorough review to prevent recurrence
+
+Our protocol includes procedures for various scenarios, ensuring minimal impact even in worst-case situations.
+
+## Compliance
+
+### Q: How do you handle regulatory compliance?
+
+**A:** We take a proactive approach to compliance:
+- **Legal Framework**: Game mechanics designed with consideration of relevant regulations
+- **Age Verification**: Appropriate measures to ensure compliance with age restrictions
+- **KYC Integration**: Optional for tournaments with larger prize pools
+- **Token Classification**: Clear distinction between NFTs and in-game mechanics
+- **Jurisdictional Awareness**: Geofencing where legally required
+
+We're committed to responsible operation while advocating for reasonable regulatory approaches to blockchain gaming.
+
+### Q: What about intellectual property rights?
+
+**A:** Our IP approach includes:
+- **Original Assets**: All game assets created specifically for this project
+- **Clear Licensing**: Explicit terms for NFT ownership rights
+- **Creator Royalties**: Proper attribution and compensation via Solana NFT standards
+- **Open Components**: Some game elements released under open-source licenses
+
+NFT owners receive specific rights to their characters while the game maintains its core IP.
+
+## Community Governance
+
+### Q: Will the community have input into future development?
+
+**A:** Community governance is integrated into our roadmap:
+- **Feedback Channels**: Structured systems for collecting player input
+- **Feature Voting**: Community polls on prioritization
+- **Tournament Structure**: Community influence on competitive formats
+- **Balance Committee**: Selected players participating in game balance discussions
+- **Path to DAO**: Gradual transition toward decentralized governance
+
+We believe community involvement creates a better and more sustainable game ecosystem.
 
 ## Miscellaneous
 
-### Q: How do you handle cross-chain compatibility?
-**A:** Our cross-chain strategy includes:
-- Primary implementation on Solana for core functionality
-- Wrapped asset bridges for major blockchain ecosystems
-- Cross-chain identity solutions for unified accounts
-- Layered architecture that separates chain-specific logic
-- Asset representation standards across supported chains
-- Comprehensive testing for cross-chain interactions
-- Clear user guidance for cross-chain operations
+### Q: How will you onboard non-crypto users?
 
-### Q: What technical documentation is available?
-**A:** Our documentation suite includes:
-- Technical whitepaper with architecture details
-- API documentation for developer integration
-- Smart contract specifications and audits
-- Economic model documentation with simulations
-- User guides for wallet setup and game mechanics
-- Integration guides for ecosystem partners
-- Regular technical blog posts on development progress
+**A:** Our onboarding strategy focuses on accessibility:
+- **Simple Wallet Setup**: Streamlined process with clear instructions
+- **Fiat On-ramps**: Partnerships with payment providers
+- **Educational Content**: Guides and tutorials for blockchain concepts
+- **Progressive Complexity**: Basic gameplay learnable without deep crypto knowledge
+- **Optional Features**: Core gameplay accessible without advanced crypto features
 
-### Q: How do you stay current with blockchain technology advances?
-**A:** Our technology currency approach includes:
-- Regular technology radar assessments
-- Participation in Solana development communities
-- Research partnerships with blockchain development teams
-- Technical advisory board with industry experts
-- Experimental implementations of promising technologies
-- Continuous education program for development team
-- Architecture reviews to identify improvement opportunities
+The game is designed to be enjoyable for both crypto enthusiasts and traditional gamers.
 
-### Q: What fallback plans exist if Solana faces major issues?
-**A:** Our contingency planning includes:
-- Multi-chain strategy allowing for ecosystem expansion
-- Architecture that separates game logic from blockchain specifics
-- Data portability to allow migration if necessary
-- Treasury diversification across multiple assets
-- Relationship development with multiple blockchain platforms
-- Regular assessment of blockchain reliability and performance
-- Clear communication protocols for blockchain-related issues
+### Q: What's your update and maintenance plan?
 
-### Q: How do you ensure a fair launch for NFT minting?
-**A:** Our fair launch technical measures include:
-- Bot detection and prevention systems
-- Queue management for high-demand periods
-- Transaction rate limiting per wallet
-- CAPTCHA and human verification steps
-- Randomized mint timing within announced windows
-- Transparent allocation for whitelist vs. public mint
-- Technical monitoring for suspicious minting patterns
+**A:** Our post-launch support includes:
+- **Regular Updates**: Biweekly patches and monthly feature updates
+- **Balance Adjustments**: Data-driven tweaks to ensure fair gameplay
+- **New Content**: Seasonal additions to keep the game fresh
+- **Community Events**: Regular tournaments and special competitions
+- **Technical Maintenance**: Ongoing infrastructure improvements
+
+We're committed to long-term support while building toward our expanded roadmap.
 
 ---
 
-*This Technical FAQ is maintained by the Gauntlet of SOLiders development team and will be updated regularly as the project evolves. Last updated: [Current Date]* 
+*This FAQ will be maintained and updated regularly by the development team. Last updated: [Date]* 
