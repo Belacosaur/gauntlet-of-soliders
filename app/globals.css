@@ -4,11 +4,11 @@
 :root {
   --background: #121212;
   --foreground: #eaeaea;
-  --primary: #7e22ce;
-  --secondary: #22d3ee;
-  --accent: #f59e0b;
+  --primary: #c40c0c; /* Deep red color */
+  --secondary: #ff3030; /* Lighter red color */
+  --accent: #ff5a5a; /* Accent red */
   --success: #22c55e;
-  --danger: #ef4444;
+  --danger: #ff0000; /* Bright red for errors/warnings */
 }
 
 @theme inline {
@@ -28,6 +28,16 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+/* Global cursor styling */
+html, body {
+  cursor: url('/cursors/mastersword.cur'), auto;
+}
+
+/* Make sure interactive elements also use the sword cursor */
+button, a, [role="button"], input[type="submit"], input[type="button"], .cursor-pointer {
+  cursor: url('/cursors/mastersword.cur'), pointer !important;
 }
 
 body {

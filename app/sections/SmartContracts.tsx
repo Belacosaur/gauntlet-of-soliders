@@ -9,7 +9,7 @@ const SmartContracts: React.FC = () => {
   const contracts = [
     {
       id: 'nft-minting',
-      icon: <FaCode className="text-purple-700" size={24} />,
+      icon: <FaCode className="text-red-700" size={24} />,
       title: 'NFT Minting Contract',
       description: 'Secure and efficient NFT minting contract for the 8,192 unique warriors across 8 character classes. Implements Magic Eden standards with proper metadata handling and provenance verification.',
       features: [
@@ -33,7 +33,7 @@ const SmartContracts: React.FC = () => {
     },
     {
       id: 'tournament',
-      icon: <FaTrophy className="text-cyan-500" size={24} />,
+      icon: <FaTrophy className="text-red-500" size={24} />,
       title: 'Tournament Contract',
       description: 'Tournament management system that handles brackets, progression, and prize distribution. Includes scheduling, registration, and automated prize payments with transparent verifiability.',
       features: [
@@ -87,11 +87,11 @@ const SmartContracts: React.FC = () => {
                 {contract.description}
               </p>
               
-              <h4 className="text-lg font-['Press_Start_2P'] text-cyan-400 mb-3">Key Features</h4>
+              <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-3">Key Features</h4>
               <ul className="grid grid-cols-2 gap-2">
                 {contract.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-md font-['VT323'] text-gray-300">
-                    <div className="w-2 h-2 bg-purple-700 mr-2"></div>
+                    <div className="w-2 h-2 bg-red-700 mr-2"></div>
                     {feature}
                   </li>
                 ))}
@@ -105,16 +105,16 @@ const SmartContracts: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 p-8 bg-[#121218] border-2 border-dashed border-purple-700"
+          className="mt-16 p-8 bg-[#121218] border-2 border-dashed border-red-700"
         >
           <div className="flex items-center mb-6 justify-center">
-            <FaClock className="text-purple-500 mr-4" size={30} />
+            <FaClock className="text-red-500 mr-4" size={30} />
             <h3 className="text-2xl font-['Press_Start_2P'] text-gradient text-center">Accelerated Development Approach</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-xl font-['Press_Start_2P'] text-purple-400 mb-4">Efficient Development</h4>
+              <h4 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Efficient Development</h4>
               <p className="text-lg font-['VT323'] text-gray-300 mb-4">
                 Our elite blockchain development team can deliver the complete technical implementation in just 30-60 days 
                 by leveraging pre-built frameworks, streamlined workflows, and specialized expertise.
@@ -126,26 +126,26 @@ const SmartContracts: React.FC = () => {
             </div>
             
             <div>
-              <h4 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Technology Stack</h4>
+              <h4 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Technology Stack</h4>
               <ul className="space-y-2">
                 <li className="flex items-center text-lg font-['VT323'] text-gray-300">
-                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
                   <strong className="text-white mr-2">Blockchain:</strong> Solana (high-speed, low-cost transactions)
                 </li>
                 <li className="flex items-center text-lg font-['VT323'] text-gray-300">
-                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
                   <strong className="text-white mr-2">Smart Contracts:</strong> Rust with Anchor framework
                 </li>
                 <li className="flex items-center text-lg font-['VT323'] text-gray-300">
-                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
                   <strong className="text-white mr-2">Frontend:</strong> React.js with TypeScript
                 </li>
                 <li className="flex items-center text-lg font-['VT323'] text-gray-300">
-                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
                   <strong className="text-white mr-2">Game Engine:</strong> Custom WebGL with PixiJS
                 </li>
                 <li className="flex items-center text-lg font-['VT323'] text-gray-300">
-                  <div className="w-2 h-2 bg-cyan-500 mr-2"></div>
+                  <div className="w-2 h-2 bg-red-500 mr-2"></div>
                   <strong className="text-white mr-2">DevOps:</strong> CI/CD pipeline for rapid iteration
                 </li>
               </ul>

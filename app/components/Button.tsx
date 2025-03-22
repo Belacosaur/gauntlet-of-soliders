@@ -21,9 +21,9 @@ const Button: React.FC<ButtonProps> = ({
   icon,
 }) => {
   const variantClasses = {
-    primary: 'bg-purple-700 hover:bg-purple-600',
-    secondary: 'bg-cyan-500 hover:bg-cyan-400',
-    accent: 'bg-amber-500 hover:bg-amber-400',
+    primary: 'bg-red-700 hover:bg-red-600',
+    secondary: 'bg-red-500 hover:bg-red-400',
+    accent: 'bg-red-400 hover:bg-red-300',
     success: 'bg-green-600 hover:bg-green-500',
     danger: 'bg-red-600 hover:bg-red-500',
   };

@@ -19,8 +19,8 @@ const Card: React.FC<CardProps> = ({
   className = '',
 }) => {
   const variantClasses = {
-    primary: 'border-purple-700 bg-[#1a1025]',
-    secondary: 'border-cyan-500 bg-[#0d242c]',
+    primary: 'border-red-700 bg-[#1a0d0d]',
+    secondary: 'border-red-500 bg-[#2c0d0d]',
     accent: 'border-amber-500 bg-[#271f0d]',
   };
 

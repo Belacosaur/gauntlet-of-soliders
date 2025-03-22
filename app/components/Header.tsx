@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes, FaCalendar } from 'react-icons/fa';
+import { FaBars, FaTimes, FaScroll, FaCode } from 'react-icons/fa';
 import Button from './Button';
 
 const Header: React.FC = () => {
@@ -25,8 +25,6 @@ const Header: React.FC = () => {
     { name: 'Investment', href: '#prize-pool' },
     { name: 'Visuals', href: '#visuals' },
     { name: 'Technical', href: '#contracts' },
-    { name: 'Design Tips', href: '/design-tips' },
-    { name: 'Whitepaper', href: '/whitepaper' },
   ];
 
   return (
@@ -36,10 +34,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center">
-              <img src="/images/gauntlet-logo.png" alt="Gauntlet of SOLiders" className="h-9 mr-3" />
-              <span className="text-lg text-white font-['Press_Start_2P'] hidden sm:block">
-                <span className="text-gradient">SOLiders</span>
-              </span>
+              <img src="/images/Glogo.png" alt="Gauntlet of SOLiders" className="h-12 mr-3" />
             </div>
           </Link>
 
@@ -62,9 +57,22 @@ const Header: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: navLinks.length * 0.1 }}
             >
-              <Button size="sm" icon={<FaCalendar />}>
-                Schedule Demo
-              </Button>
+              <Link href="/design-tips">
+                <Button size="sm" variant="secondary" icon={<FaCode />}>
+                  Design Tips
+                </Button>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: navLinks.length * 0.1 + 0.1 }}
+            >
+              <Link href="/whitepaper">
+                <Button size="sm" icon={<FaScroll />}>
+                  Whitepaper
+                </Button>
+              </Link>
             </motion.div>
           </nav>
 
@@ -95,10 +103,17 @@ const Header: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-2">
-              <Button size="sm" className="w-full" icon={<FaCalendar />}>
-                Schedule Demo
-              </Button>
+            <div className="pt-2 space-y-2">
+              <Link href="/design-tips" onClick={() => setIsOpen(false)}>
+                <Button size="sm" variant="secondary" className="w-full" icon={<FaCode />}>
+                  Design Tips
+                </Button>
+              </Link>
+              <Link href="/whitepaper" onClick={() => setIsOpen(false)}>
+                <Button size="sm" className="w-full" icon={<FaScroll />}>
+                  Whitepaper
+                </Button>
+              </Link>
             </div>
           </nav>
         </motion.div>

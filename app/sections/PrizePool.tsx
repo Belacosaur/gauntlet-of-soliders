@@ -7,11 +7,12 @@ import { FaTrophy, FaCoins, FaChartPie } from 'react-icons/fa';
 
 const PrizePool: React.FC = () => {
   const prizeDistribution = [
-    { position: '1st Place', prize: '5,000 SOL' },
-    { position: '2nd Place', prize: '250 SOL' },
-    { position: '3rd-4th Place', prize: '150 SOL each' },
-    { position: '5th-8th Place', prize: '40 SOL each' },
-    { position: '9th-16th Place', prize: '2.5 SOL each' },
+    { position: '1st Place', prize: '4,000 SOL' },
+    { position: '2nd Place', prize: '500 SOL' },
+    { position: '3rd Place', prize: '250 SOL' },
+    { position: '4th Place', prize: '125 SOL' },
+    { position: '5th-8th Place', prize: '25 SOL each' },
+    { position: '9th-16th Place', prize: '3.125 SOL each' },
   ];
 
   return (
@@ -32,7 +33,7 @@ const PrizePool: React.FC = () => {
           >
             <div className="mb-8 flex items-center">
               <FaTrophy className="text-amber-500 mr-4" size={30} />
-              <h3 className="text-2xl font-['Press_Start_2P'] text-purple-600">Prize Distribution</h3>
+              <h3 className="text-2xl font-['Press_Start_2P'] text-red-600">Prize Distribution</h3>
             </div>
 
             <div className="space-y-4">
@@ -43,7 +44,7 @@ const PrizePool: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="flex items-center justify-between bg-[#121218] p-4 border-l-4 border-purple-700"
+                  className="flex items-center justify-between bg-[#121218] p-4 border-l-4 border-red-700"
                 >
                   <div className="font-['VT323'] text-xl text-gray-300">{prize.position}</div>
                   <div className="font-['Press_Start_2P'] text-xl text-white">{prize.prize}</div>
@@ -56,7 +57,7 @@ const PrizePool: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-8 p-6 bg-[#121218] border-2 border-dashed border-purple-700"
+              className="mt-8 p-6 bg-[#121218] border-2 border-dashed border-red-700"
             >
               <p className="text-lg font-['VT323'] text-gray-300">
                 The prize pool will be staked with Pesky Penguins validator to accrue additional rewards, 
@@ -74,8 +75,8 @@ const PrizePool: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="mb-8 flex items-center">
-              <FaChartPie className="text-cyan-500 mr-4" size={30} />
-              <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-500">Revenue Allocation</h3>
+              <FaChartPie className="text-red-500 mr-4" size={30} />
+              <h3 className="text-2xl font-['Press_Start_2P'] text-red-500">Revenue Allocation</h3>
             </div>
 
             <motion.div
@@ -97,8 +98,8 @@ const PrizePool: React.FC = () => {
               <div className="w-full bg-gray-800 h-8 mb-8 rounded-sm overflow-hidden">
                 <div className="flex h-full">
                   <div className="bg-amber-500 h-full w-[61%]"></div>
-                  <div className="bg-purple-600 h-full w-[33%]"></div>
-                  <div className="bg-cyan-500 h-full w-[6%]"></div>
+                  <div className="bg-red-600 h-full w-[33%]"></div>
+                  <div className="bg-red-500 h-full w-[6%]"></div>
                 </div>
               </div>
 
@@ -111,16 +112,16 @@ const PrizePool: React.FC = () => {
                 </div>
                 
                 <div className="bg-[#17171f] p-4 text-center">
-                  <div className="w-4 h-4 bg-purple-600 mx-auto mb-2"></div>
+                  <div className="w-4 h-4 bg-red-600 mx-auto mb-2"></div>
                   <div className="font-['VT323'] text-lg">Team/Dev/Art</div>
-                  <div className="font-['Press_Start_2P'] text-purple-500 text-sm mt-1">2,700 SOL</div>
+                  <div className="font-['Press_Start_2P'] text-red-500 text-sm mt-1">2,700 SOL</div>
                   <div className="text-gray-400 text-sm">33%</div>
                 </div>
                 
                 <div className="bg-[#17171f] p-4 text-center">
-                  <div className="w-4 h-4 bg-cyan-500 mx-auto mb-2"></div>
+                  <div className="w-4 h-4 bg-red-500 mx-auto mb-2"></div>
                   <div className="font-['VT323'] text-lg">Reserve</div>
-                  <div className="font-['Press_Start_2P'] text-cyan-500 text-sm mt-1">492 SOL</div>
+                  <div className="font-['Press_Start_2P'] text-red-500 text-sm mt-1">492 SOL</div>
                   <div className="text-gray-400 text-sm">6%</div>
                 </div>
               </div>
@@ -131,9 +132,9 @@ const PrizePool: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="p-6 bg-[#121218] border-2 border-dashed border-cyan-500"
+              className="p-6 bg-[#121218] border-2 border-dashed border-red-500"
             >
-              <h4 className="text-xl font-['Press_Start_2P'] mb-3 text-cyan-500">Scalability</h4>
+              <h4 className="text-xl font-['Press_Start_2P'] mb-3 text-red-500">Scalability</h4>
               <p className="text-lg font-['VT323'] text-gray-300">
                 The reserve fund (492 SOL) and accumulated $EXP from Season 1 will be used to fund future
                 seasons. As the game progresses, increased floor prices (potentially 5-10 SOL for late-game

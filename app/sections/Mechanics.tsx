@@ -21,7 +21,7 @@ const Mechanics: React.FC = () => {
     },
     {
       id: 'staking',
-      icon: <FaGraduationCap className="text-purple-500" size={32} />,
+      icon: <FaGraduationCap className="text-red-500" size={32} />,
       title: 'Staking & $EXP Token Economy',
       description: [
         'Staking Platform: Players stake NFTs to earn $EXP at base rate of 2 $EXP/day (Lords: 4 $EXP/day, Magicians/Witches: 3 $EXP/day).',
@@ -33,7 +33,7 @@ const Mechanics: React.FC = () => {
     },
     {
       id: 'duels',
-      icon: <FaFistRaised className="text-cyan-500" size={32} />,
+      icon: <FaFistRaised className="text-red-500" size={32} />,
       title: 'Duel Mechanics',
       description: [
         'Structure: 13 rounds of 1v1 duels (8,192 → 4,096 → … → 1) over 6-9 months (approximately 1 round per month).',
@@ -66,7 +66,7 @@ const Mechanics: React.FC = () => {
             >
               <div className="md:w-1/3 flex justify-center">
                 <div className="relative w-full max-w-sm aspect-square bg-[#121218] p-8 flex items-center justify-center">
-                  <div className="absolute inset-0 border-2 border-dashed border-purple-700 m-4 opacity-30"></div>
+                  <div className="absolute inset-0 border-2 border-dashed border-red-700 m-4 opacity-30"></div>
                   <div className="text-center">
                     {mechanic.icon}
                     <h3 className="text-2xl font-['Press_Start_2P'] mt-6 mb-3 text-gradient">{mechanic.title}</h3>
@@ -78,7 +78,7 @@ const Mechanics: React.FC = () => {
                 <ul className="space-y-3 text-lg font-['VT323'] text-gray-300">
                   {mechanic.description.map((item, idx) => (
                     <li key={idx} className="flex items-start">
-                      <div className="w-3 h-3 bg-purple-700 mt-1.5 mr-3 flex-shrink-0"></div>
+                      <div className="w-3 h-3 bg-red-700 mt-1.5 mr-3 flex-shrink-0"></div>
                       <p>{item}</p>
                     </li>
                   ))}

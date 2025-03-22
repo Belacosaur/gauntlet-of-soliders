@@ -52,10 +52,10 @@ const WhitepaperPage = () => {
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-white">
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-[#0a0a0a] border-b border-purple-900 shadow-lg py-4">
+      <nav className="sticky top-0 z-50 bg-[#0a0a0a] border-b border-red-900 shadow-lg py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center text-xl font-['Press_Start_2P'] text-purple-500">
+            <Link href="/" className="flex items-center text-xl font-['Press_Start_2P'] text-red-500">
               <FaHome className="mr-2" />
               <span className="hidden md:inline">Back to Home</span>
             </Link>
@@ -64,7 +64,7 @@ const WhitepaperPage = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setShowTOC(!showTOC)}
-              className="p-2 text-purple-500"
+              className="p-2 text-red-500"
             >
               <FaBars size={24} />
             </button>
@@ -76,7 +76,7 @@ const WhitepaperPage = () => {
         {/* Sidebar / TOC */}
         <aside className={`md:w-1/4 md:pr-8 md:block ${showTOC ? 'block' : 'hidden'} md:sticky top-24 self-start`}>
           <div className="bg-[#121218] p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-['Press_Start_2P'] text-purple-500 mb-6 flex items-center">
+            <h2 className="text-xl font-['Press_Start_2P'] text-red-500 mb-6 flex items-center">
               <FaBookOpen className="mr-2" /> 
               Contents
             </h2>
@@ -87,7 +87,7 @@ const WhitepaperPage = () => {
                     href={`#${section.id}`}
                     className={`block py-2 px-3 rounded transition-colors font-['VT323'] text-lg ${
                       activeSection === section.id
-                        ? 'bg-purple-900 text-white'
+                        ? 'bg-red-900 text-white'
                         : 'text-gray-300 hover:bg-[#1a1a24]'
                     }`}
                     onClick={(e) => {
@@ -129,14 +129,14 @@ const WhitepaperPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">Overview</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">Overview</h2>
                   
                   <div className="p-6 bg-[#121218] rounded-lg mb-8">
                     <p className="text-xl mb-4">
-                      <strong className="text-purple-400">Gauntlet of SOLiders</strong> is a medieval 
+                      <strong className="text-red-400">Gauntlet of SOLiders</strong> is a medieval 
                       NFT duel game built on the Solana blockchain where 8,192 pixel-art warriors 
                       enter a tournament, and after 13 rounds of combat, only one warrior remains to 
-                      claim a 5,000 SOL grand prize.
+                      claim a 4,000 SOL grand prize.
                     </p>
 
                     <p className="mb-4">
@@ -147,10 +147,10 @@ const WhitepaperPage = () => {
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div className="bg-[#121218] p-6 rounded-lg border-l-4 border-purple-700">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-purple-400 mb-4">Key Highlights</h3>
+                    <div className="bg-[#121218] p-6 rounded-lg border-l-4 border-red-700">
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Key Highlights</h3>
                       <ul className="space-y-2 list-disc pl-5 font-['VT323'] text-lg">
-                        <li>Development Timeline: <span className="text-purple-400 font-bold">30-60 days</span></li>
+                        <li>Development Timeline: <span className="text-red-400 font-bold">30-60 days</span></li>
                         <li>Development Budget: <span className="text-amber-400 font-bold">$20,000</span></li>
                         <li>Player Engagement: <span className="text-green-400 font-bold">Daily tournaments & battles</span></li>
                         <li>NFT Collection: <span className="text-cyan-400 font-bold">8,192 unique warriors</span> across 8 classes</li>
@@ -158,8 +158,8 @@ const WhitepaperPage = () => {
                       </ul>
                     </div>
 
-                    <div className="bg-[#121218] p-6 rounded-lg border-l-4 border-cyan-500">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Core Components</h3>
+                    <div className="bg-[#121218] p-6 rounded-lg border-l-4 border-red-500">
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Core Components</h3>
                       <ul className="space-y-2 list-disc pl-5 font-['VT323'] text-lg">
                         <li>Solana blockchain integration for NFTs, tokens, and smart contracts</li>
                         <li>Web-based frontend for user interface</li>
@@ -211,7 +211,7 @@ const WhitepaperPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">Game Mechanics</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">Game Mechanics</h2>
                   
                   <div className="p-6 bg-[#121218] rounded-lg mb-8">
                     <p className="text-xl mb-4">
@@ -223,7 +223,7 @@ const WhitepaperPage = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     <div>
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Battle System</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Battle System</h3>
                       <div className="bg-[#121218] p-6 rounded-lg h-full">
                         <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">3x3 Grid Arena</h4>
                         <p className="mb-4">
@@ -256,18 +256,18 @@ const WhitepaperPage = () => {
                     </div>
                     
                     <div>
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Warrior Classes</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Warrior Classes</h3>
                       <div className="bg-[#121218] p-6 rounded-lg">
                         <p className="mb-4">
                           The game features 8 distinct warrior classes, each with unique abilities and playstyles:
                         </p>
                         <div className="grid grid-cols-2 gap-4">
-                          <div className="bg-[#1a1025] p-3 rounded border-l-2 border-purple-700">
-                            <h5 className="font-['Press_Start_2P'] text-purple-400 text-sm mb-1">Knight</h5>
+                          <div className="bg-[#1a1025] p-3 rounded border-l-2 border-red-700">
+                            <h5 className="font-['Press_Start_2P'] text-red-400 text-sm mb-1">Knight</h5>
                             <p className="text-sm">Defensive specialist with shield bash ability</p>
                           </div>
-                          <div className="bg-[#1a1025] p-3 rounded border-l-2 border-cyan-500">
-                            <h5 className="font-['Press_Start_2P'] text-cyan-400 text-sm mb-1">Monk</h5>
+                          <div className="bg-[#1a1025] p-3 rounded border-l-2 border-red-500">
+                            <h5 className="font-['Press_Start_2P'] text-red-400 text-sm mb-1">Monk</h5>
                             <p className="text-sm">Agile fighter with counter attacks</p>
                           </div>
                           <div className="bg-[#1a1025] p-3 rounded border-l-2 border-amber-500">
@@ -298,14 +298,14 @@ const WhitepaperPage = () => {
                       </div>
                       
                       <div className="bg-[#121218] p-6 rounded-lg mt-6">
-                        <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Tournament Structure</h3>
+                        <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Tournament Structure</h3>
                         <p className="mb-4">
                           The main tournament consists of 13 rounds of elimination battles:
                         </p>
                         <ul className="list-disc pl-5 space-y-2">
                           <li>8,192 NFTs enter the tournament</li>
                           <li>Each round eliminates half of the remaining warriors</li>
-                          <li>Final round decides the single champion who claims the 5,000 SOL prize</li>
+                          <li>Final round decides the single champion who claims the 4,000 SOL prize</li>
                           <li>Eliminated warriors remain owned by players and can participate in future events</li>
                           <li>Secondary tournaments with smaller prize pools run concurrently</li>
                         </ul>
@@ -314,7 +314,7 @@ const WhitepaperPage = () => {
                   </div>
 
                   <div className="bg-[#121218] p-6 rounded-lg">
-                    <h3 className="text-xl font-['Press_Start_2P'] text-purple-400 mb-4">Anti-Cheating Mechanisms</h3>
+                    <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Anti-Cheating Mechanisms</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
@@ -357,7 +357,7 @@ const WhitepaperPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">Technology</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">Technology</h2>
                   
                   <div className="p-6 bg-[#121218] rounded-lg mb-8">
                     <p className="text-xl mb-4">
@@ -369,7 +369,7 @@ const WhitepaperPage = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div className="bg-[#121218] p-6 rounded-lg">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">System Architecture</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">System Architecture</h3>
                       
                       <p className="mb-4">
                         The system is designed with a Web3 architecture pattern, consisting of:
@@ -409,7 +409,7 @@ const WhitepaperPage = () => {
                     </div>
                     
                     <div className="bg-[#121218] p-6 rounded-lg">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Blockchain Implementation</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Blockchain Implementation</h3>
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Why Solana?</h4>
                       <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -445,7 +445,7 @@ const WhitepaperPage = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div className="bg-[#121218] p-6 rounded-lg">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">NFT Architecture</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">NFT Architecture</h3>
                       
                       <p className="mb-4">
                         The NFT structure includes:
@@ -487,7 +487,7 @@ enum WarriorClass {
                     </div>
 
                     <div className="bg-[#121218] p-6 rounded-lg">
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Tech Stack</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Tech Stack</h3>
                       
                       <div className="grid grid-cols-2 gap-4">
                         <div>
@@ -546,7 +546,7 @@ enum WarriorClass {
                   </div>
 
                   <div className="bg-[#121218] p-6 rounded-lg">
-                    <h3 className="text-xl font-['Press_Start_2P'] text-cyan-400 mb-4">Infrastructure & Scalability</h3>
+                    <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Infrastructure & Scalability</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
@@ -591,7 +591,7 @@ enum WarriorClass {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">Prize Pool</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">Prize Pool</h2>
                   
                   <div className="p-6 bg-[#121218] rounded-lg mb-8">
                     <p className="text-xl mb-4">
@@ -607,27 +607,32 @@ enum WarriorClass {
                         <div className="space-y-4">
                           <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-amber-500">
                             <div className="font-['VT323'] text-xl text-gray-300">1st Place</div>
-                            <div className="font-['Press_Start_2P'] text-xl text-white">5,000 SOL</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">4,000 SOL</div>
                           </div>
                           
                           <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-gray-400">
                             <div className="font-['VT323'] text-xl text-gray-300">2nd Place</div>
-                            <div className="font-['Press_Start_2P'] text-xl text-white">250 SOL</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">500 SOL</div>
                           </div>
                           
                           <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-amber-700">
-                            <div className="font-['VT323'] text-xl text-gray-300">3rd-4th Place</div>
-                            <div className="font-['Press_Start_2P'] text-xl text-white">150 SOL each</div>
+                            <div className="font-['VT323'] text-xl text-gray-300">3rd Place</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">250 SOL</div>
                           </div>
                           
-                          <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-purple-700">
+                          <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-red-700">
+                            <div className="font-['VT323'] text-xl text-gray-300">4th Place</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">125 SOL</div>
+                          </div>
+                          
+                          <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-red-700">
                             <div className="font-['VT323'] text-xl text-gray-300">5th-8th Place</div>
-                            <div className="font-['Press_Start_2P'] text-xl text-white">40 SOL each</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">25 SOL each</div>
                           </div>
                           
-                          <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-cyan-500">
+                          <div className="flex items-center justify-between bg-[#17171f] p-4 border-l-4 border-red-500">
                             <div className="font-['VT323'] text-xl text-gray-300">9th-16th Place</div>
-                            <div className="font-['Press_Start_2P'] text-xl text-white">2.5 SOL each</div>
+                            <div className="font-['Press_Start_2P'] text-xl text-white">3.125 SOL each</div>
                           </div>
                         </div>
 
@@ -643,7 +648,7 @@ enum WarriorClass {
                     </div>
                     
                     <div>
-                      <h3 className="text-xl font-['Press_Start_2P'] text-cyan-500 mb-4">Revenue Allocation</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-500 mb-4">Revenue Allocation</h3>
                       <div className="bg-[#121218] p-6 rounded-lg h-full">
                         <div className="flex items-center mb-6">
                           <svg className="w-6 h-6 text-amber-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -660,8 +665,8 @@ enum WarriorClass {
                         <div className="w-full bg-gray-800 h-10 mb-8 rounded overflow-hidden">
                           <div className="flex h-full">
                             <div className="bg-amber-500 h-full w-[61%]"></div>
-                            <div className="bg-purple-600 h-full w-[33%]"></div>
-                            <div className="bg-cyan-500 h-full w-[6%]"></div>
+                            <div className="bg-red-600 h-full w-[33%]"></div>
+                            <div className="bg-red-500 h-full w-[6%]"></div>
                           </div>
                         </div>
 
@@ -674,22 +679,22 @@ enum WarriorClass {
                           </div>
                           
                           <div className="bg-[#17171f] p-4 text-center">
-                            <div className="w-4 h-4 bg-purple-600 mx-auto mb-2"></div>
+                            <div className="w-4 h-4 bg-red-600 mx-auto mb-2"></div>
                             <div className="font-['VT323'] text-lg">Team/Dev/Art</div>
-                            <div className="font-['Press_Start_2P'] text-purple-500 text-sm mt-1">2,700 SOL</div>
+                            <div className="font-['Press_Start_2P'] text-red-500 text-sm mt-1">2,700 SOL</div>
                             <div className="text-gray-400 text-sm">33%</div>
                           </div>
                           
                           <div className="bg-[#17171f] p-4 text-center">
-                            <div className="w-4 h-4 bg-cyan-500 mx-auto mb-2"></div>
+                            <div className="w-4 h-4 bg-red-500 mx-auto mb-2"></div>
                             <div className="font-['VT323'] text-lg">Reserve</div>
-                            <div className="font-['Press_Start_2P'] text-cyan-500 text-sm mt-1">492 SOL</div>
+                            <div className="font-['Press_Start_2P'] text-red-500 text-sm mt-1">492 SOL</div>
                             <div className="text-gray-400 text-sm">6%</div>
                           </div>
                         </div>
 
-                        <div className="p-6 bg-[#17171f] border-2 border-dashed border-cyan-500">
-                          <h4 className="text-xl font-['Press_Start_2P'] mb-3 text-cyan-500">Scalability</h4>
+                        <div className="p-6 bg-[#17171f] border-2 border-dashed border-red-500">
+                          <h4 className="text-xl font-['Press_Start_2P'] mb-3 text-red-500">Scalability</h4>
                           <p className="text-lg font-['VT323'] text-gray-300">
                             The reserve fund (492 SOL) and accumulated $EXP from Season 1 will be used 
                             to fund future seasons. As the game progresses, increased floor prices 
@@ -702,7 +707,7 @@ enum WarriorClass {
                   </div>
 
                   <div className="bg-[#121218] p-6 rounded-lg">
-                    <h3 className="text-xl font-['Press_Start_2P'] text-purple-400 mb-4">Future Prize Pools</h3>
+                    <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Future Prize Pools</h3>
                     
                     <p className="mb-4 text-lg font-['VT323'] text-gray-300">
                       Beyond the initial tournament, Gauntlet of SOLiders will implement several 
@@ -746,7 +751,7 @@ enum WarriorClass {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">Tokenomics</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">Tokenomics</h2>
                   
                   <div className="p-6 bg-[#121218] rounded-lg mb-8">
                     <p className="text-xl mb-4">
@@ -759,7 +764,7 @@ enum WarriorClass {
                     <div>
                       <h3 className="text-xl font-['Press_Start_2P'] text-amber-500 mb-4">NFT Economics</h3>
                       <div className="bg-[#121218] p-6 rounded-lg">
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Initial Mint</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Initial Mint</h4>
                         <ul className="list-disc pl-5 space-y-2 mb-6">
                           <li>8,192 unique warrior NFTs</li>
                           <li>Mint price: 1 SOL each</li>
@@ -767,7 +772,7 @@ enum WarriorClass {
                           <li>Estimated mint out: 5-7 days</li>
                         </ul>
                         
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">NFT Utility</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">NFT Utility</h4>
                         <ul className="list-disc pl-5 space-y-2 mb-6">
                           <li>Tournament participation</li>
                           <li>$EXP earning through staking</li>
@@ -775,7 +780,7 @@ enum WarriorClass {
                           <li>Future game access</li>
                         </ul>
                         
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Secondary Market</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Secondary Market</h4>
                         <ul className="list-disc pl-5 space-y-2">
                           <li>5% royalties on all trades</li>
                           <li>Projected floor: 5-10 SOL after 90 days</li>
@@ -784,16 +789,16 @@ enum WarriorClass {
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-['Press_Start_2P'] text-purple-500 mb-4">$EXP Token</h3>
+                      <h3 className="text-xl font-['Press_Start_2P'] text-red-500 mb-4">$EXP Token</h3>
                       <div className="bg-[#121218] p-6 rounded-lg">
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Implementation</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Implementation</h4>
                         <ul className="list-disc pl-5 space-y-2 mb-6">
                           <li>SPL Token standard on Solana</li>
                           <li>Fixed supply model</li>
                           <li>Automated distribution via staking contracts</li>
                         </ul>
                         
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Token Utility</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Token Utility</h4>
                         <ul className="list-disc pl-5 space-y-2 mb-6">
                           <li>Leveling up warriors</li>
                           <li>Entry fees for premium tournaments</li>
@@ -801,7 +806,7 @@ enum WarriorClass {
                           <li>Governance votes for protocol decisions</li>
                         </ul>
                         
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Acquisition Methods</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Acquisition Methods</h4>
                         <ul className="list-disc pl-5 space-y-2">
                           <li>Staking NFT warriors</li>
                           <li>Winning tournament matches</li>
@@ -812,23 +817,23 @@ enum WarriorClass {
                   </div>
 
                   <div className="bg-[#121218] p-6 rounded-lg">
-                    <h3 className="text-xl font-['Press_Start_2P'] text-cyan-500 mb-4">Token Allocation</h3>
+                    <h3 className="text-xl font-['Press_Start_2P'] text-red-500 mb-4">Token Allocation</h3>
                     
                     <div className="w-full bg-gray-800 h-16 mb-8 rounded-lg overflow-hidden">
                       <div className="flex h-full">
                         <div className="bg-amber-500 h-full w-[40%] flex items-center justify-center">
                           <span className="font-['VT323'] text-sm">Players</span>
                         </div>
-                        <div className="bg-purple-600 h-full w-[25%] flex items-center justify-center">
+                        <div className="bg-red-600 h-full w-[25%] flex items-center justify-center">
                           <span className="font-['VT323'] text-sm">Staking</span>
                         </div>
-                        <div className="bg-cyan-500 h-full w-[15%] flex items-center justify-center">
+                        <div className="bg-red-500 h-full w-[15%] flex items-center justify-center">
                           <span className="font-['VT323'] text-sm">Team</span>
                         </div>
-                        <div className="bg-green-500 h-full w-[10%] flex items-center justify-center">
+                        <div className="bg-red-400 h-full w-[10%] flex items-center justify-center">
                           <span className="font-['VT323'] text-sm">Marketing</span>
                         </div>
-                        <div className="bg-pink-500 h-full w-[10%] flex items-center justify-center">
+                        <div className="bg-red-300 h-full w-[10%] flex items-center justify-center">
                           <span className="font-['VT323'] text-sm">Reserve</span>
                         </div>
                       </div>
@@ -843,14 +848,14 @@ enum WarriorClass {
                       </div>
                       
                       <div className="bg-[#17171f] p-6 rounded">
-                        <h4 className="font-['Press_Start_2P'] text-purple-400 mb-3">Staking: 25%</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Staking: 25%</h4>
                         <p className="text-gray-300 font-['VT323']">
                           Rewards for NFT stakers and liquidity providers
                         </p>
                       </div>
                       
                       <div className="bg-[#17171f] p-6 rounded">
-                        <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-3">Team & Reserve: 35%</h4>
+                        <h4 className="font-['Press_Start_2P'] text-red-400 mb-3">Team & Reserve: 35%</h4>
                         <p className="text-gray-300 font-['VT323']">
                           Development (15%), Marketing (10%), Reserve fund (10%)
                         </p>
@@ -868,7 +873,7 @@ enum WarriorClass {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h2 className="text-3xl text-purple-500 mb-6">FAQ</h2>
+                  <h2 className="text-3xl text-red-500 mb-6">FAQ</h2>
                   
                   <div className="space-y-6">
                     <div className="bg-[#121218] p-6 rounded-lg">
@@ -876,7 +881,7 @@ enum WarriorClass {
                       
                       <div className="space-y-6">
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">Why did you choose Solana for Gauntlet of SOLiders?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">Why did you choose Solana for Gauntlet of SOLiders?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Gauntlet of SOLiders leverages Solana's industry-leading blockchain technology for 
                             our NFT infrastructure. Our selection of Solana was driven by its exceptional 
@@ -888,7 +893,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How does the battle system work technically?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How does the battle system work technically?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             The battle system combines on-chain and off-chain components: players submit 
                             sealed moves using a commit-reveal scheme, move validity is verified cryptographically, 
@@ -898,7 +903,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How do you prevent cheating in battles?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How do you prevent cheating in battles?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Multiple anti-cheating mechanisms are implemented: commit-reveal pattern prevents 
                             players from seeing opponent's moves before committing, server-side verification of 
@@ -914,7 +919,7 @@ enum WarriorClass {
                       
                       <div className="space-y-6">
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How do you ensure smart contract security?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How do you ensure smart contract security?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Our multilayered security approach includes: multiple independent security audits 
                             from reputable firms, formal verification for critical components, comprehensive testing, 
@@ -923,7 +928,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">Can the smart contracts be upgraded if needed?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">Can the smart contracts be upgraded if needed?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Yes, we implement upgradability with strict governance: program upgradability is 
                             managed through Solana's upgradable BPF loader, multisig approval process required 
@@ -933,7 +938,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How do you handle chain congestion or outages?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How do you handle chain congestion or outages?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             We implement several resilience strategies: transaction retry mechanisms with 
                             exponential backoff, state channel architecture for critical gameplay during chain 
@@ -949,7 +954,7 @@ enum WarriorClass {
                       
                       <div className="space-y-6">
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How is the $EXP token technically implemented?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How is the $EXP token technically implemented?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             The $EXP token implementation includes: SPL Token standard on Solana for maximum 
                             compatibility, fixed supply model with no mint authority after initial creation, 
@@ -959,7 +964,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">What prevents token inflation or devaluation?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">What prevents token inflation or devaluation?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Multiple economic balancing mechanisms are employed: fixed total supply, token 
                             burning from gameplay activities, utility-driven demand, balanced release schedule, 
@@ -968,7 +973,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How will NFT values be maintained long-term?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How will NFT values be maintained long-term?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             NFT value is preserved through: continued utility in gameplay, strategic burning 
                             mechanisms, evolving attributes and abilities, integration with future games and 
@@ -983,7 +988,7 @@ enum WarriorClass {
                       
                       <div className="space-y-6">
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How can you deliver in just 30-60 days?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How can you deliver in just 30-60 days?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Our accelerated timeline is possible through: an elite team of blockchain and 
                             gaming veterans, reuse of battle-tested components, streamlined design process 
@@ -993,7 +998,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">What happens after the initial launch?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">What happens after the initial launch?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Post-launch plans include: regular tournaments with escalating prize pools, 
                             seasonal content updates, expanded gameplay mechanics, community-driven feature 
@@ -1002,7 +1007,7 @@ enum WarriorClass {
                         </div>
                         
                         <div>
-                          <h4 className="font-['Press_Start_2P'] text-cyan-400 mb-2">How will you handle game balance and meta evolution?</h4>
+                          <h4 className="font-['Press_Start_2P'] text-red-400 mb-2">How will you handle game balance and meta evolution?</h4>
                           <p className="text-gray-300 font-['VT323'] text-lg">
                             Game balance is maintained through: data-driven analytics of match outcomes, 
                             seasonal rebalancing of class abilities, community feedback channels, 

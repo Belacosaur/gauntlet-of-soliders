@@ -22,7 +22,7 @@ const Overview: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-6">Game & Investment</h3>
+            <h3 className="text-2xl font-['Press_Start_2P'] text-red-400 mb-6">Game & Investment</h3>
             <div className="space-y-4 text-lg font-['VT323'] text-gray-300">
               <p>
                 <span className="text-white font-bold">Development:</span> 30-60 day accelerated timeline
@@ -45,7 +45,7 @@ const Overview: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-['Press_Start_2P'] text-cyan-400 mb-6">Premise</h3>
+            <h3 className="text-2xl font-['Press_Start_2P'] text-red-400 mb-6">Premise</h3>
             <p className="text-lg font-['VT323'] text-gray-300 mb-4">
               A medieval NFT battle game where players collect unique warrior NFTs and compete in strategic duels, tournaments, and special events.
             </p>
@@ -90,10 +90,10 @@ const Overview: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-[#121218] p-6 border-2 border-dashed border-cyan-500 rounded-md"
+          className="bg-[#121218] p-6 border-2 border-dashed border-red-500 rounded-md"
         >
           <div className="flex items-center mb-4">
-            <FaRocket className="text-cyan-400 mr-4" size={24} />
+            <FaRocket className="text-red-400 mr-4" size={24} />
             <h3 className="text-xl font-['Press_Start_2P'] text-gradient">Accelerated Development</h3>
           </div>
           <p className="text-lg font-['VT323'] text-gray-300">

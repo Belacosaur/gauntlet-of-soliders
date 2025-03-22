@@ -35,7 +35,7 @@ const Visuals: React.FC = () => {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-video bg-[#121218] border-2 border-purple-700 p-4 flex items-center justify-center">
+              <div className="aspect-video bg-[#121218] border-2 border-red-700 p-4 flex items-center justify-center">
                 {/* Placeholder for art style showcase */}
                 <div className="w-full h-full bg-gradient-to-br from-[#1a1025] to-[#08080c] relative overflow-hidden">
                   {/* Grid pattern overlay */}
@@ -48,7 +48,7 @@ const Visuals: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-cyan-500"></div>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-red-500"></div>
             </div>
           </div>
         );
@@ -61,11 +61,11 @@ const Visuals: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-[#121218] border-2 border-purple-700 p-4"
+                className="bg-[#121218] border-2 border-red-700 p-4"
               >
                 <div className="aspect-square bg-gradient-to-br from-[#1a1025] to-[#08080c] mb-4 flex items-center justify-center">
                   {/* Placeholder for character sprite */}
-                  <div className="w-16 h-32 bg-purple-700 relative">
+                  <div className="w-16 h-32 bg-red-700 relative">
                     {/* Simple pixel art character silhouette */}
                     <div className="w-8 h-8 rounded-full bg-[#08080c] absolute top-0 left-4"></div>
                     <div className="w-12 h-16 bg-[#08080c] absolute top-8 left-2"></div>
@@ -99,15 +99,15 @@ const Visuals: React.FC = () => {
                 className="flex flex-col md:flex-row gap-8 items-center"
               >
                 <div className="md:w-1/2">
-                  <div className="aspect-video bg-[#121218] border-2 border-cyan-500 p-4 flex items-center justify-center">
+                  <div className="aspect-video bg-[#121218] border-2 border-red-500 p-4 flex items-center justify-center">
                     {/* Placeholder for UI screen */}
                     <div className="w-full h-full bg-[#08080c] relative p-4">
-                      <div className="border-2 border-cyan-500 p-2 mb-2">
-                        <div className="text-sm font-['Press_Start_2P'] text-cyan-500">Round 3</div>
+                      <div className="border-2 border-red-500 p-2 mb-2">
+                        <div className="text-sm font-['Press_Start_2P'] text-red-500">Round 3</div>
                       </div>
                       {screen.name === 'Battle Screen' && (
                         <div className="flex justify-around items-center h-32">
-                          <div className="w-12 h-24 bg-purple-700"></div>
+                          <div className="w-12 h-24 bg-red-700"></div>
                           <div className="text-xl font-['Press_Start_2P'] text-white">VS</div>
                           <div className="w-12 h-24 bg-amber-500"></div>
                         </div>
@@ -121,7 +121,7 @@ const Visuals: React.FC = () => {
                       )}
                       {screen.name === 'Character Sheet' && (
                         <div className="flex mt-4">
-                          <div className="w-16 h-16 bg-purple-700 mr-4"></div>
+                          <div className="w-16 h-16 bg-red-700 mr-4"></div>
                           <div>
                             <div className="text-sm font-['Press_Start_2P'] text-white">Knight</div>
                             <div className="text-sm font-['VT323'] text-gray-300">LVL 5 • 240 $EXP</div>
@@ -161,7 +161,7 @@ const Visuals: React.FC = () => {
               onClick={() => setActiveTab(tab.id as 'style' | 'characters' | 'ui')}
               className={`
                 flex items-center px-6 py-4 font-['VT323'] text-lg
-                ${activeTab === tab.id ? 'text-white border-b-2 border-cyan-500' : 'text-gray-400 hover:text-gray-300'}
+                ${activeTab === tab.id ? 'text-white border-b-2 border-red-500' : 'text-gray-400 hover:text-gray-300'}
               `}
             >
               <span className="mr-2">{tab.icon}</span>
