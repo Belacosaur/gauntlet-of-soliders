@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               }}
               className="relative z-10"
             >
-              <img src="/images/Glogo.png" alt="Gauntlet of SOLiders Logo" className="w-[450px] max-w-full" />
+              <img src="/images/Glogo.png" alt="Gauntlet of SOLiders Logo" className="w-[550px] max-w-full" />
             </motion.div>
           </div>
         </div>
