@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes, FaScroll, FaCode } from 'react-icons/fa';
+import { FaBars, FaTimes, FaScroll, FaCode, FaBoxOpen } from 'react-icons/fa';
 import Button from './Button';
 
 const Header: React.FC = () => {
@@ -47,15 +47,40 @@ const Header: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
-                <Link href={link.href} className="text-gray-300 hover:text-cyan-400 font-['VT323'] text-lg px-1 py-2 transition-colors">
+                <a 
+                  href={`/${link.href}`} 
+                  className="text-gray-300 hover:text-cyan-400 font-['VT323'] text-lg px-1 py-2 transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Check if we're already on the homepage
+                    if (window.location.pathname === '/') {
+                      // If on homepage, just scroll to the section
+                      document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      // If on another page, navigate to homepage with the hash
+                      window.location.href = `/${link.href}`;
+                    }
+                  }}
+                >
                   {link.name}
-                </Link>
+                </a>
               </motion.div>
             ))}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: navLinks.length * 0.1 }}
+            >
+              <Link href="/packages">
+                <Button size="sm" variant="secondary" icon={<FaBoxOpen />}>
+                  Packages
+                </Button>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: navLinks.length * 0.1 + 0.1 }}
             >
               <Link href="/design-tips">
                 <Button size="sm" variant="secondary" icon={<FaCode />}>
@@ -66,7 +91,7 @@ const Header: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: navLinks.length * 0.1 + 0.1 }}
+              transition={{ duration: 0.3, delay: navLinks.length * 0.1 + 0.2 }}
             >
               <Link href="/whitepaper">
                 <Button size="sm" icon={<FaScroll />}>
@@ -94,16 +119,32 @@ const Header: React.FC = () => {
         >
           <nav className="flex flex-col space-y-4 pt-4 pb-6">
             {navLinks.map((link, index) => (
-              <Link
+              <a
                 key={index}
-                href={link.href}
+                href={`/${link.href}`}
                 className="text-gray-300 hover:text-cyan-400 font-['VT323'] text-xl px-2 py-1 transition-colors"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  // Check if we're already on the homepage
+                  if (window.location.pathname === '/') {
+                    // If on homepage, just scroll to the section
+                    document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    // If on another page, navigate to homepage with the hash
+                    window.location.href = `/${link.href}`;
+                  }
+                }}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
             <div className="pt-2 space-y-2">
+              <Link href="/packages" onClick={() => setIsOpen(false)}>
+                <Button size="sm" variant="secondary" className="w-full" icon={<FaBoxOpen />}>
+                  Packages
+                </Button>
+              </Link>
               <Link href="/design-tips" onClick={() => setIsOpen(false)}>
                 <Button size="sm" variant="secondary" className="w-full" icon={<FaCode />}>
                   Design Tips

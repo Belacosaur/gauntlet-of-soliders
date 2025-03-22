@@ -29,14 +29,14 @@ const CTA: React.FC = () => {
               Ready to Launch Your Blockchain Game?
             </h2>
             
-            <p className="text-xl md:text-2xl text-gray-300 font-['VT323'] mb-8 max-w-3xl mx-auto">
-              Gauntlet of SOLiders delivers exceptional ROI with an accelerated 30-60 day development timeline and minimal upfront investment of just $35,000.
+            <p className="text-xl md:text-2xl text-gray-300 font-['VT323'] mb-8">
+              Gauntlet of SOLiders delivers an accelerated 30-60 day development timeline with flexible package options starting at $20,000.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
               {[
                 { label: 'Development Timeline', value: '30-60 Days', icon: <FaCalendar className="text-red-500" /> },
-                { label: 'Total Investment', value: '$35,000', icon: <FaDollarSign className="text-red-500" /> },
+                { label: 'Base Package', value: '$20,000', icon: <FaDollarSign className="text-red-500" /> },
                 { label: 'Collection Size', value: '8,192 NFTs', icon: <FaUsers className="text-red-500" /> },
               ].map((stat, index) => (
                 <motion.div

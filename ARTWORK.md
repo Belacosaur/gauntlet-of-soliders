@@ -76,7 +76,7 @@ Each class requires:
 - Character sprite sheet (idle, walk, attack, special, victory, defeat)
 - 8 directional facings
 - 3 animation frames per action
-- 32x32 pixel base character size
+- 512x512 pixel character size
 - Transparent background
 
 **Character Classes**:
@@ -203,7 +203,7 @@ Each trait must be designed to layer properly with other traits:
 ## Technical Specifications
 
 ### Resolution Standards
-- Character base sprites: 32x32 pixels
+- Character base sprites: 512x512 pixels
 - Trait components: Variable by type, designed to layer properly
 - NFT display resolution: 512x512 pixels (composed from game assets)
 - Environmental tiles: 16x16 pixels

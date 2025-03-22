@@ -8,15 +8,15 @@ import { FaCode, FaServer, FaChartLine, FaExchangeAlt, FaTrophy, FaClock, FaMeda
 const SmartContracts: React.FC = () => {
   const contracts = [
     {
-      id: 'nft-minting',
-      icon: <FaCode className="text-red-700" size={24} />,
-      title: 'NFT Minting Contract',
-      description: 'Secure and efficient NFT minting contract for the 8,192 unique warriors across 8 character classes. Implements Magic Eden standards with proper metadata handling and provenance verification.',
+      id: 'staking',
+      icon: <FaServer className="text-red-700" size={24} />,
+      title: 'Staking Contract',
+      description: 'Allows players to stake their warrior NFTs to earn $EXP tokens over time. Includes variable earning rates based on warrior class and level, with secure claiming mechanisms.',
       features: [
-        'Efficient mint process',
-        'Metadata management',
-        'Proper royalty distribution',
-        'Collection verification',
+        'NFT staking & unstaking',
+        'Time-based $EXP rewards',
+        'Variable class-based rates',
+        'Security against exploits',
       ],
     },
     {
@@ -26,33 +26,33 @@ const SmartContracts: React.FC = () => {
       description: 'Core battle mechanics implementing the enhanced Rock/Paper/Scissors system on a 3x3 grid. Handles move validation, outcome determination, and tournament progression with anti-cheat measures.',
       features: [
         'Strategic combat system',
-        'Move validation',
+        'Commit-reveal pattern',
         'Outcome verification',
-        'Tournament integration',
+        'Anti-cheat protection',
       ],
     },
     {
-      id: 'tournament',
-      icon: <FaTrophy className="text-red-500" size={24} />,
-      title: 'Tournament Contract',
-      description: 'Tournament management system that handles brackets, progression, and prize distribution. Includes scheduling, registration, and automated prize payments with transparent verifiability.',
-      features: [
-        'Bracket management',
-        'Entry fee handling',
-        'Automated progression',
-        'Prize distribution',
-      ],
-    },
-    {
-      id: 'marketplace',
+      id: 'token',
       icon: <FaChartLine className="text-green-500" size={24} />,
-      title: 'Marketplace Integration',
-      description: 'Seamless integration with popular Solana marketplaces for secondary trading of warrior NFTs. Handles royalty enforcement and enables trading activity tracking for community rewards.',
+      title: '$EXP Token Contract',
+      description: 'Manages the $EXP token economy which powers the game ecosystem. Includes controlled minting through staking, transfer functions, and burning mechanics for tournament entry fees.',
       features: [
-        'Royalty enforcement',
-        'Trading analytics',
-        'Marketplace API integration',
-        'Collection verification',
+        'SPL token standard',
+        'Controlled minting',
+        'Tournament fee integration',
+        'Secure ownership model',
+      ],
+    },
+    {
+      id: 'prize-pool',
+      icon: <FaTrophy className="text-red-500" size={24} />,
+      title: 'Prize Pool Contract',
+      description: 'Manages tournament prize pools and automated distribution to winners. Includes transparency mechanisms, staking of prize pool funds for additional rewards, and secure multi-sig controls.',
+      features: [
+        'Transparent allocation',
+        'Automated distribution',
+        'Prize pool staking',
+        'Multi-sig security',
       ],
     }
   ];

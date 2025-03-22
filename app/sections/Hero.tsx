@@ -87,9 +87,8 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8 }}
               className="max-w-xl"
             >
-              <p className="text-xl md:text-2xl text-gray-300 font-['VT323'] mb-8">
-                A strategic medieval NFT battle game on Solana with exceptional ROI potential. 
-                <span className="text-red-400 font-bold"> From concept to launch in just 30-60 days.</span>
+              <p className="mt-6 text-xl md:text-2xl font-['VT323'] text-gray-300 leading-relaxed max-w-3xl">
+                A strategic medieval NFT battle game on Solana with <span className="text-red-400">8,192 unique warriors</span> across 8 distinct classes.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">

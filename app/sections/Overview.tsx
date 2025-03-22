@@ -28,11 +28,13 @@ const Overview: React.FC = () => {
                 <span className="text-white font-bold">Development:</span> 30-60 day accelerated timeline
               </p>
               <p>
-                <span className="text-white font-bold">Total Budget:</span> $35,000 (all-inclusive)
+                <span className="text-white font-bold">Package Options:</span>
               </p>
-              <p>
-                <span className="text-white font-bold">ROI Potential:</span> 5-10x return within 90 days
-              </p>
+              <ul className="ml-5 space-y-2">
+                <li>• Base Package: <span className="text-amber-400">$20,000</span> (Limited art, core functions)</li>
+                <li>• Extended Package: <span className="text-amber-400">$28,000</span> (Animated sprites, mini-game)</li>
+                <li>• Marketing Package: <span className="text-amber-400">$10,000</span> (Optional)</li>
+              </ul>
               <p>
                 <span className="text-white font-bold">Platform:</span> Solana blockchain, using smart contracts for NFT minting, battles, and tournament systems
               </p>

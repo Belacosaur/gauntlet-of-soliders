@@ -4,11 +4,24 @@
 
 This document provides a comprehensive cost estimation for the development of "Gauntlet of SOLiders," a medieval NFT duel game on the Solana blockchain. Our highly experienced development team possesses exceptional expertise in blockchain technology, ensuring an efficient and cost-effective development process.
 
-Total development cost: **$20,000**
+We offer two development packages:
 
-Estimated development timeframe: **30-60 days**
+1. **Base Package: $20,000**
+   - Limited art assets (static sprites)
+   - Core gameplay functions
+   - Essential smart contracts
+   - Basic UI/UX
 
-## Cost Breakdown
+2. **Extended Package: $28,000**
+   - Animated character sprites
+   - Explorer mini-game
+   - Enhanced visual effects
+   - Additional gameplay features
+   - All features from the base package
+
+Estimated development timeframe: **30-60 days** for either package
+
+## Cost Breakdown - Base Package ($20,000)
 
 ### 1. Blockchain Development
 
@@ -30,9 +43,30 @@ Estimated development timeframe: **30-60 days**
 
 | Component | Description | Cost |
 |-----------|-------------|------|
-| Pixel Art | 8 warrior classes and UI elements | $1,200 |
+| Static Pixel Art | 8 warrior classes and UI elements | $1,200 |
 | QA & Testing | Comprehensive testing of all components | $800 |
 | **Subtotal** | | **$2,000** |
+
+## Cost Breakdown - Extended Package ($28,000)
+
+The extended package includes all elements from the base package, plus:
+
+### 1. Enhanced Art & Animation ($4,000)
+
+| Component | Description | Cost |
+|-----------|-------------|------|
+| Animated Sprites | Animation frames for all character classes | $2,500 |
+| Visual Effects | Enhanced battle and UI animations | $1,500 |
+| **Subtotal** | | **$4,000** |
+
+### 2. Explorer Mini-Game ($4,000)
+
+| Component | Description | Cost |
+|-----------|-------------|------|
+| Mini-Game Development | Exploration gameplay mechanics | $2,500 |
+| Mini-Game Assets | Environment and interaction elements | $1,000 |
+| Integration | Connecting with main game systems | $500 |
+| **Subtotal** | | **$4,000** |
 
 ## Development Efficiency Factors
 
@@ -85,9 +119,19 @@ At current SOL valuation, the project offers extraordinary ROI potential with de
 | Monitoring & Support | Technical support and maintenance | $600-1,200 |
 | **Monthly Total** | | **$1,000-2,000** |
 
+## Marketing Package (Optional)
+
+In addition to the development packages, we offer a separate Marketing Package for $10,000 that includes:
+
+- Community management
+- Content creation
+- Social media campaigns
+- Influencer outreach
+- Launch event coordination
+
 ## Conclusion
 
-The development of Gauntlet of SOLiders represents an exceptional value proposition with a modest investment of $20,000 yielding a sophisticated blockchain gaming platform. Our highly skilled team's ability to execute this project within 30-60 days showcases our technical expertise and efficient development practices.
+The development of Gauntlet of SOLiders represents an exceptional value proposition with flexible investment options to meet different project needs and budgets. Our highly skilled team's ability to execute this project within 30-60 days showcases our technical expertise and efficient development practices.
 
 This streamlined development approach does not compromise quality or features, but rather leverages our team's deep expertise in blockchain gaming development, pre-existing code frameworks, and optimized workflows to deliver exceptional results at a fraction of typical industry costs.
 

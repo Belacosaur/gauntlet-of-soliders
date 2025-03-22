@@ -17,7 +17,10 @@
 ## Quick Facts
 
 - **Development Timeline**: 30-60 days (accelerated schedule)
-- **Total Budget**: $35,000 (all-inclusive)
+- **Development Options**: 
+  - Base Package: $20,000 (Limited art, core functions)
+  - Extended Package: $28,000 (Animated sprites, explorer mini-game)
+- **Marketing Package**: $10,000 (Optional, separate)
 - **NFT Collection Size**: 8,192 unique warriors
 - **Target Audience**: Crypto enthusiasts, casual gamers, collectors
 - **Revenue Model**: NFT sales, tournament fees, marketplace royalties
@@ -25,18 +28,17 @@
 ## Game Highlights
 
 - **Fast Development**: Elite team delivering a complete product in just 30-60 days
-- **Low Initial Investment**: Efficient development approach with $35K total budget
+- **Flexible Options**: Choose between base package or extended features
 - **Engaging Gameplay**: Strategic battle system with depth and replayability
 - **Scalable Model**: Foundation for seasons, expansions, and ecosystem growth
 
 ## Cost Breakdown
 
-| Category | Budget | Timeline |
-|----------|--------|----------|
-| Game Development | $20,000 | 30-60 days |
-| Art & Assets | $5,000-$10,000 | 50 days |
-| Marketing | $10,000 | Ongoing |
-| **Total Investment** | **$35,000** | |
+| Package | Includes | Budget | Timeline |
+|----------|--------|----------|----------|
+| Base Game Package | Core gameplay, static sprites, smart contracts | $20,000 | 30-60 days |
+| Extended Game Package | Animated sprites, explorer mini-game, enhanced features | $28,000 | 30-60 days |
+| Marketing Package (Optional) | Community management, content creation, promotion | $10,000 | Ongoing |
 
 ## Key Features
 
@@ -55,10 +57,11 @@
 
 ### Smart Contracts
 - Secure and efficient Solana-based design
-- Transparent and fair battle mechanics
-- Built-in anti-cheat protection
-- Seamless wallet integration
-- Magic Eden NFT standard compliance
+- Staking system for $EXP token rewards
+- Battle System with commit-reveal pattern for fairness
+- $EXP Token for in-game economy
+- Prize Pool for transparent tournament rewards
+- Magic Eden integration for NFT marketplace
 
 ### Artwork
 - Distinctive pixel art style

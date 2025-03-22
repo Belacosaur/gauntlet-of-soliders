@@ -148,9 +148,9 @@ const DesignTipsPage = () => {
               <h3 className="text-xl font-['Press_Start_2P'] text-gradient mb-4">Sprite Technical Requirements</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="text-lg font-['Press_Start_2P'] text-cyan-400 mb-2">Character Specifications:</h4>
+                  <h4 className="text-lg font-['Press_Start_2P'] text-red-400 mb-2">Character Specifications:</h4>
                   <ul className="list-disc pl-5 space-y-2 font-['VT323'] text-gray-300">
-                    <li>32x32 pixel base character size</li>
+                    <li>512x512 pixel character size for high resolution detail</li>
                     <li>Single static pose per character</li>
                     <li>Transparent background for smooth integration</li>
                     <li>16-bit style pixel art with enhanced detail</li>

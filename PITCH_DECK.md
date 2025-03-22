@@ -6,7 +6,10 @@ Gauntlet of SOLiders is a medieval fantasy NFT battle game built on the Solana b
 
 **Key Highlights:**
 - **Development Timeline:** 30-60 days from start to finish
-- **Development Budget:** $20,000 total investment
+- **Development Options:** 
+  - Base Package: $20,000 (Limited art, core functions)
+  - Extended Package: $28,000 (Animated sprites, explorer mini-game)
+- **Marketing Package:** $10,000 (Optional, separate)
 - **Unique Selling Points:** Strategic RPS gameplay, 8,192 NFT collection, tournament prize pools
 - **Blockchain:** Solana (low fees, high throughput, eco-friendly)
 - **Target Audience:** Crypto enthusiasts, casual gamers, competitive players
@@ -112,18 +115,35 @@ Our game addresses these challenges through:
 
 ## Investment Opportunity
 
-### Capital Requirements
-- **Total Budget:** $20,000
-- **Development:** $15,000 (75%)
-- **Marketing:** $3,000 (15%)
-- **Operations:** $2,000 (10%)
+### Package Options
+- **Base Package: $20,000**
+  - Core game development
+  - Static character sprites
+  - Basic battle system
+  - Essential smart contracts
+  - Standard UI/UX
+
+- **Extended Package: $28,000**
+  - Everything in the base package
+  - Animated character sprites
+  - Explorer mini-game feature
+  - Enhanced visual effects
+  - Additional gameplay elements
+
+- **Marketing Package: $10,000** (Optional)
+  - Community management
+  - Content creation
+  - Social media campaigns
+  - Influencer outreach
+  - Launch event coordination
 
 ### USPs for Investors
-1. **Rapid Development:** Complete product in just 30-60 days
-2. **Experienced Team:** Track record in blockchain gaming and NFTs
-3. **Low Initial Investment:** Capital-efficient development approach
-4. **Scalable Model:** Foundation for ongoing revenue streams
-5. **Market Timing:** Positioned for Solana gaming ecosystem growth
+1. **Flexible Options:** Choose investment level based on project needs
+2. **Rapid Development:** Complete product in just 30-60 days
+3. **Experienced Team:** Track record in blockchain gaming and NFTs
+4. **Capital-Efficient:** Streamlined development approach
+5. **Scalable Model:** Foundation for ongoing revenue streams
+6. **Market Timing:** Positioned for Solana gaming ecosystem growth
 
 ## Team
 

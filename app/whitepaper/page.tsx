@@ -151,7 +151,12 @@ const WhitepaperPage = () => {
                       <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Key Highlights</h3>
                       <ul className="space-y-2 list-disc pl-5 font-['VT323'] text-lg">
                         <li>Development Timeline: <span className="text-red-400 font-bold">30-60 days</span></li>
-                        <li>Development Budget: <span className="text-amber-400 font-bold">$20,000</span></li>
+                        <li>Development Options:
+                          <ul className="ml-5 mt-2 space-y-1">
+                            <li>Base Package: <span className="text-amber-400 font-bold">$20,000</span> (Limited art, core functions)</li>
+                            <li>Extended Package: <span className="text-amber-400 font-bold">$28,000</span> (Animated sprites, explorer mini-game)</li>
+                          </ul>
+                        </li>
                         <li>Player Engagement: <span className="text-green-400 font-bold">Daily tournaments & battles</span></li>
                         <li>NFT Collection: <span className="text-cyan-400 font-bold">8,192 unique warriors</span> across 8 classes</li>
                         <li>Battle System: <span className="text-green-400 font-bold">Strategic Rock/Paper/Scissors</span> with positioning</li>
@@ -334,14 +339,12 @@ const WhitepaperPage = () => {
                       <div>
                         <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Randomness Generation</h4>
                         <p className="mb-4">
-                          A hybrid approach to randomness ensures fairness:
+                          A simple approach to randomness ensures fairness:
                         </p>
                         <ul className="list-disc pl-5 space-y-2">
-                          <li>Chainlink VRF provides verifiable on-chain randomness for critical elements</li>
-                          <li>Client-side pseudo-random generation for non-economic visual effects</li>
-                          <li>Cryptographic commit-reveal schemes for player interactions</li>
-                          <li>Entropy pooling from multiple blockchain sources</li>
-                          <li>Transparent randomness verification tools available to players</li>
+                          <li>Verifiable on-chain randomness for critical elements</li>
+                          <li>Client-side pseudo-random generation for visual effects</li>
+                          <li>Transparent randomness verification for player trust</li>
                         </ul>
                       </div>
                     </div>
@@ -377,11 +380,11 @@ const WhitepaperPage = () => {
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Smart Contracts Layer</h4>
                       <ul className="list-disc pl-5 space-y-2 mb-4">
-                        <li>NFT minting and metadata management</li>
-                        <li>Staking mechanism</li>
-                        <li>Duel system</li>
-                        <li>$EXP token management</li>
-                        <li>Prize pool management</li>
+                        <li>Staking mechanism for NFTs to earn $EXP tokens</li>
+                        <li>Battle system with commit-reveal pattern</li>
+                        <li>$EXP token management with controlled minting</li>
+                        <li>Prize pool distribution and management</li>
+                        <li>Tournament progression tracking</li>
                       </ul>
                       
                       <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Frontend Layer</h4>
@@ -505,7 +508,7 @@ enum WarriorClass {
                           <ul className="list-disc pl-5 space-y-1 mb-4">
                             <li>Rust (contracts)</li>
                             <li>TypeScript</li>
-                            <li>Solidity</li>
+                            <li>JavaScript</li>
                             <li>WebAssembly</li>
                           </ul>
                         </div>
@@ -542,42 +545,6 @@ enum WarriorClass {
                         <li>Frontend development with Web3 integration</li>
                         <li>Pixel art creation and animation</li>
                       </ul>
-                    </div>
-                  </div>
-
-                  <div className="bg-[#121218] p-6 rounded-lg">
-                    <h3 className="text-xl font-['Press_Start_2P'] text-red-400 mb-4">Infrastructure & Scalability</h3>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Backend Infrastructure</h4>
-                        <p className="mb-4">
-                          Our scalable backend employs:
-                        </p>
-                        <ul className="list-disc pl-5 space-y-2">
-                          <li>Kubernetes-orchestrated microservices architecture</li>
-                          <li>Autoscaling container deployments based on demand</li>
-                          <li>Regional deployment for reduced latency across geographies</li>
-                          <li>Load balancing across multiple availability zones</li>
-                          <li>Database sharding for horizontal scaling of player data</li>
-                          <li>Caching layers to reduce blockchain query load</li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h4 className="font-['Press_Start_2P'] text-amber-400 mb-3">Resilience & Reliability</h4>
-                        <p className="mb-4">
-                          We implement several resilience strategies:
-                        </p>
-                        <ul className="list-disc pl-5 space-y-2">
-                          <li>Transaction retry mechanisms with exponential backoff</li>
-                          <li>State channel architecture for critical gameplay during chain congestion</li>
-                          <li>Local state maintenance with deferred on-chain reconciliation</li>
-                          <li>Priority fee adjustment algorithm for transaction inclusion</li>
-                          <li>Graceful degradation modes that maintain core gameplay</li>
-                          <li>Multiple RPC endpoint providers with automatic failover</li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </motion.div>
